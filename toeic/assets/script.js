@@ -3,7 +3,7 @@ $(document).ready(function() {
 	const orgList = $('li');
 
   $('#hideOrder').on("change", function() {
-  	console.log($(this));
+    console.log($(this));
     if ($(this).is(':checked')) {
       $.each($('li'), function() {
         let orderEl = $(this).find('.number');
@@ -17,6 +17,26 @@ $(document).ready(function() {
 
         if (orderEl.data('order')) {
           orderEl.text(orderEl.data('order'));
+        }
+      });
+    }
+  });
+
+  $('#hideDef').on("change", function() {
+  	console.log($(this));
+    if ($(this).is(':checked')) {
+      $.each($('li'), function() {
+        let defEl = $(this).find('[data-def]');
+
+        defEl.data('def', defEl.text());
+        defEl.text('');
+      });
+    } else {
+      $.each($('li'), function() {
+        let defEl = $(this).find('[data-def]');
+
+        if (defEl.data('def')) {
+          defEl.text(defEl.data('def'));
         }
       });
     }
@@ -53,10 +73,6 @@ $(document).ready(function() {
         });
         break;
 
-      case 'hideOrder':
-
-        break;
-
       case 'hideAll':
         $.each($('li'), function() {
           let senEl = $(this).find('[data-sen-val]');
@@ -78,13 +94,14 @@ $(document).ready(function() {
           }
         });
         $('#hideOrder').prop('checked', true).trigger('change');
+        $('#hideDef').prop('checked', true).trigger('change');
         break;
 
       case 'showAll':
         $.each($('li'), function() {
           let senEl = $(this).find('[data-sen-val]');
           let wdEl = $(this).find('[data-wd-val]');
-          let defEl = $(this).find('.definition');
+          let defEl = $(this).find('[data-def]');
 
           if (wdEl.data('wd-val')) {
             wdEl.text($(wdEl[0]).data('wd-val'));
@@ -97,6 +114,7 @@ $(document).ready(function() {
           }
         });
         $('#hideOrder').prop('checked', false).trigger('change');;
+        $('#hideDef').prop('checked', false).trigger('change');;
         break;
 
       default:
@@ -160,10 +178,7 @@ $(document).ready(function() {
 
   $('#shuffleItems').on('change', function(){
   	$(this).prop('disbaled', true);
-
-  	if ($('#fadeStuff').is(':checked')) {
-  		$('#fadeStuff').click();
-  	}
+    $('#fadeStuff').prop('checked', false);
 
   	if ($(this).is(':checked')) {
 	  	let orgList = $('li');
