@@ -3,7 +3,6 @@ $(document).ready(function() {
 	const orgList = $('li');
 
   $('#hideOrder').on("change", function() {
-  	console.log($(this));
     if ($(this).is(':checked')) {
       $.each($('li'), function() {
         let orderEl = $(this).find('.number');
@@ -31,11 +30,15 @@ $(document).ready(function() {
         $.each($('li'), function() {
           let senEl = $(this).find('[data-sen-val]');
           let wdEl = $(this).find('[data-wd-val]');
+          let imgEl = $(this).find('img');
 
           senEl.data('sen-val', $(senEl[0]).text());
           senEl.text('');
           if (wdEl.data('wd-val')) {
             wdEl.text($(wdEl[0]).data('wd-val'));
+          }
+          if (imgEl.data('src')) {
+            imgEl.src(imgEl.data('src'));
           }
         });
         break;
@@ -44,17 +47,34 @@ $(document).ready(function() {
         $.each($('li'), function() {
           let senEl = $(this).find('[data-sen-val]');
           let wdEl = $(this).find('[data-wd-val]');
+          let imgEl = $(this).find('img');
 
           wdEl.data('wd-val', $(wdEl[0]).text());
           wdEl.text('');
           if (senEl.data('sen-val')) {
             senEl.text($(senEl[0]).data('sen-val'));
           }
+          if (imgEl.data('src')) {
+            imgEl.src(imgEl.data('src'));
+          }
         });
         break;
 
-      case 'hideOrder':
+      case 'hideImg':
+        $.each($('li'), function() {
+          let senEl = $(this).find('[data-sen-val]');
+          let wdEl = $(this).find('[data-wd-val]');
+          let imgEl = $(this).find('img');
 
+          imgEl.data('src', imgEl.attr('src'));
+          imgEl.attr('src', '');
+          if (senEl.data('sen-val')) {
+            senEl.text($(senEl[0]).data('sen-val'));
+          }
+          if (wdEl.data('wd-val')) {
+            wdEl.text($(wdEl[0]).data('wd-val'));
+          }
+        });
         break;
 
       case 'hideAll':
@@ -79,13 +99,16 @@ $(document).ready(function() {
         $.each($('li'), function() {
           let senEl = $(this).find('[data-sen-val]');
           let wdEl = $(this).find('[data-wd-val]');
-          let orderEl = $(this).find('.number');
+          let imgEl = $(this).find('img');
 
           if (wdEl.data('wd-val')) {
             wdEl.text($(wdEl[0]).data('wd-val'));
           }
           if (senEl.data('sen-val')) {
             senEl.text($(senEl[0]).data('sen-val'));
+          }
+          if (imgEl.data('src')) {
+            imgEl.attr('src', imgEl.data('src'));
           }
         });
         $('#hideOrder').prop('checked', false).trigger('change');;
@@ -134,28 +157,27 @@ $(document).ready(function() {
 
   $('#fadeStuff').on('change', function() {
   	if ($(this).is(':checked')) {
-  		$('#btnReset').click();
+  		// $('#btnReset').click();
   		$('#showAll').click();
   		$('#controlsForm :input, #dublicateForm :input').prop('disabled', true);
   		$.each($('li'), function() {
-  			$(this).find('[data-row]').css('opacity', 0).on('mouseover', function() {
-  				$(this).css('opacity', '');
-  			});
+        let self = $(this);
+  			self.find('[data-row], [data-dublicate]').css('opacity', 0);
+        self.on('mouseover', function(){
+          self.find('[data-row], [data-dublicate]').css('opacity', '');
+        });
   		});
   	} else {
   		$('#controlsForm :input, #dublicateForm :input').prop('disabled', false);
   		$.each($('li'), function() {
-  			$(this).find('[data-row]').css('opacity', '');
+  			$(this).find('[data-row], [data-dublicate]').css('opacity', '');
   		});
   	}
   });
 
   $('#shuffleItems').on('change', function(){
   	$(this).prop('disbaled', true);
-
-  	if ($('#fadeStuff').is(':checked')) {
-  		$('#fadeStuff').click();
-  	}
+    $('#fadeStuff').prop('checked', false).trigger('change');
 
   	if ($(this).is(':checked')) {
 	  	let orgList = $('li');

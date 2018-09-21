@@ -87,6 +87,10 @@ button.to-top {
   width: 50%;
 }
 
+.toggle-control .form-check.full {
+  width: 100%;
+}
+
 .dublicate-control {
   margin: 0 0 20px;
 }
