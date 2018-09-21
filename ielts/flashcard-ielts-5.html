@@ -6,6 +6,8 @@
   <title>Blueup IELTS 5</title>
   <link href="assets/bootstrap.min.css" rel="stylesheet">
   <link href="assets/style.css" rel="stylesheet">
+  <script src="assets/jquery-3.3.1.min.js"></script>
+  <script src="assets/lodash.min.js"></script>
 </head>
 
 <body>
@@ -13,496 +15,563 @@
   <h1>IELTS 5</h1>
   <ul>
     <li>
-      <p class="number">01</p>
-      <p><strong>accommodation</strong>: Peter chose this hotel as his accommodation on his business trip.</p>
-      <p class="center"><img src="./ielts-5/i_accommodation_n.jpeg" /></p>
+      <p class="number" data-order>01</p>
+      <p data-row><strong data-wd-val>accommodation: </strong><span data-sen-val>Peter chose this hotel as his accommodation on his business trip.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_accommodation_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">02</p>
-      <p><strong>adventurous</strong>: The adventurous traveler is climbing a dangerous cliff with no safety rope.</p>
-      <p class="center"><img src="./ielts-5/i_adventurous_adj.jpeg" /></p>
+      <p class="number" data-order>02</p>
+      <p data-row><strong data-wd-val>adventurous: </strong><span data-sen-val>The adventurous traveler is climbing a dangerous cliff with no safety rope.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_adventurous_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">03</p>
-      <p><strong>affect</strong>: Cold weather in Sapa affects the severity of his flu.</p>
-      <p class="center"><img src="./ielts-5/i_affect_v.jpeg" /></p>
+      <p class="number" data-order>03</p>
+      <p data-row><strong data-wd-val>affect: </strong><span data-sen-val>Cold weather in Sapa affects the severity of his flu.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_affect_v.jpeg" /></p>
     </li>
     <li>
-      <p class="number">04</p>
-      <p><strong>attraction</strong>: The travel agent is presenting the attraction of Sapa to his clients.</p>
-      <p class="center"><img src="./ielts-5/i_attraction_n.jpeg" /></p>
+      <p class="number" data-order>04</p>
+      <p data-row><strong data-wd-val>attraction: </strong><span data-sen-val>The travel agent is presenting the attraction of Sapa to his clients.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_attraction_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">05</p>
-      <p><strong>budget</strong>: The tour he wants to book becomes really budget thanks to the shocking discount program.</p>
-      <p class="center"><img src="./ielts-5/i_budget_adj.jpeg" /></p>
+      <p class="number" data-order>05</p>
+      <p data-row><strong data-wd-val>budget: </strong><span data-sen-val>The tour he wants to book becomes really budget thanks to the shocking discount program.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_budget_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">06</p>
-      <p><strong>breathtaking</strong>: This adventure tour was such a breathtaking experience for tourists.</p>
-      <p class="center"><img src="./ielts-5/i_breathtaking_adj.jpeg" /></p>
+      <p class="number" data-order>06</p>
+      <p data-row><strong data-wd-val>breathtaking: </strong><span data-sen-val>This adventure tour was such a breathtaking experience for tourists.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_breathtaking_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">07</p>
-      <p><strong>coastal</strong>: Andrew enjoys going to coastal areas because of their pure atmosphere.</p>
-      <p class="center"><img src="./ielts-5/i_coastal_adj.jpeg" /></p>
+      <p class="number" data-order>07</p>
+      <p data-row><strong data-wd-val>coastal: </strong><span data-sen-val>Andrew enjoys going to coastal areas because of their pure atmosphere.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_coastal_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">08</p>
-      <p><strong>community</strong>: Foreign tourists are recording the activities of the Vietnamese community in Mekong Delta.</p>
-      <p class="center"><img src="./ielts-5/i_community_n.jpeg" /></p>
+      <p class="number" data-order>08</p>
+      <p data-row><strong data-wd-val>community: </strong><span data-sen-val>Foreign tourists are recording the activities of the Vietnamese community in Mekong Delta.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_community_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">09</p>
-      <p><strong>cosmopolitan</strong>: The cosmopolitan is talking about all the countries he has visited.</p>
-      <p class="center"><img src="./ielts-5/i_cosmopolitan_n.jpeg" /></p>
+      <p class="number" data-order>09</p>
+      <p data-row><strong data-wd-val>cosmopolitan: </strong><span data-sen-val>The cosmopolitan is talking about all the countries he has visited.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_cosmopolitan_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">10</p>
-      <p><strong>countryside</strong>: My friend lives in a small hut in the countryside.</p>
-      <p class="center"><img src="./ielts-5/i_countryside_n.jpeg" /></p>
+      <p class="number" data-order>10</p>
+      <p data-row><strong data-wd-val>countryside: </strong><span data-sen-val>My friend lives in a small hut in the countryside.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_countryside_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">11</p>
-      <p><strong>destination</strong>: Paris is an ideal destination for lovers.</p>
-      <p class="center"><img src="./ielts-5/i_destination_n.jpeg" /></p>
+      <p class="number" data-order>11</p>
+      <p data-row><strong data-wd-val>destination: </strong><span data-sen-val>Paris is an ideal destination for lovers.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_destination_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">12</p>
-      <p><strong>diverse</strong>: Our tourism products are very diverse. We can satisfy all customer needs.</p>
-      <p class="center"><img src="./ielts-5/i_diverse_adj.jpeg" /></p>
+      <p class="number" data-order>12</p>
+      <p data-row><strong data-wd-val>diverse: </strong><span data-sen-val>Our tourism products are very diverse. We can satisfy all customer needs.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_diverse_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">13</p>
-      <p><strong>eco-tourism</strong>: Eco-tourism is the most interesting way for us to learn about our ecosystem.</p>
-      <p class="center"><img src="./ielts-5/i_eco-tourism_n.jpeg" /></p>
+      <p class="number" data-order>13</p>
+      <p data-row><strong data-wd-val>eco-tourism: </strong><span data-sen-val>Eco-tourism is the most interesting way for us to learn about our ecosystem.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_eco-tourism_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">14</p>
-      <p><strong>facility</strong>: Safety rope is one of the most necessary facilities for rock climbing.</p>
-      <p class="center"><img src="./ielts-5/i_facility_n.jpeg" /></p>
+      <p class="number" data-order>14</p>
+      <p data-row><strong data-wd-val>facility: </strong><span data-sen-val>Safety rope is one of the most necessary facilities for rock climbing.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_facility_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">15</p>
-      <p><strong>flexible</strong>: Our flight options are very flexible. You can book a flight at any time you want.</p>
-      <p class="center"><img src="./ielts-5/i_flexible_adj.jpeg" /></p>
+      <p class="number" data-order>15</p>
+      <p data-row><strong data-wd-val>flexible: </strong><span data-sen-val>Our flight options are very flexible. You can book a flight at any time you want.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_flexible_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">16</p>
-      <p><strong>fluctuate</strong>: The gold price fluctuates everyday. It makes people confused.</p>
-      <p class="center"><img src="./ielts-5/i_fluctuate_v.jpeg" /></p>
+      <p class="number" data-order>16</p>
+      <p data-row><strong data-wd-val>fluctuate: </strong><span data-sen-val>The gold price fluctuates everyday. It makes people confused.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_fluctuate_v.jpeg" /></p>
     </li>
     <li>
-      <p class="number">17</p>
-      <p><strong>foreign</strong>: When I come to a foreign country, I always want to visit its wonders.</p>
-      <p class="center"><img src="./ielts-5/i_foreign_adj.jpeg" /></p>
+      <p class="number" data-order>17</p>
+      <p data-row><strong data-wd-val>foreign: </strong><span data-sen-val>When I come to a foreign country, I always want to visit its wonders.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_foreign_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">18</p>
-      <p><strong>identification</strong>: Tourists have to show their identification at check-in before boarding the plane.</p>
-      <p class="center"><img src="./ielts-5/i_identification_n.jpeg" /></p>
+      <p class="number" data-order>18</p>
+      <p data-row><strong data-wd-val>identification: </strong><span data-sen-val>Tourists have to show their identification at check-in before boarding the plane.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_identification_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">19</p>
-      <p><strong>inhabitant</strong>: Foreign tourists are welcomed warmly by the inhabitants of the village</p>
-      <p class="center"><img src="./ielts-5/i_inhabitant_n.jpeg" /></p>
+      <p class="number" data-order>19</p>
+      <p data-row><strong data-wd-val>inhabitant: </strong><span data-sen-val>Foreign tourists are welcomed warmly by the inhabitants of the village</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_inhabitant_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">20</p>
-      <p><strong>itinerary</strong>: His itinerary from Ho Chi Minh city to Hanoi seems too long and tiring.</p>
-      <p class="center"><img src="./ielts-5/i_itinerary_n.jpeg" /></p>
+      <p class="number" data-order>20</p>
+      <p data-row><strong data-wd-val>itinerary: </strong><span data-sen-val>His itinerary from Ho Chi Minh city to Hanoi seems too long and tiring.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_itinerary_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">21</p>
-      <p><strong>journey</strong>: Peter was exhausted from his long journey.</p>
-      <p class="center"><img src="./ielts-5/i_journey_n.jpeg" /></p>
+      <p class="number" data-order>21</p>
+      <p data-row><strong data-wd-val>journey: </strong><span data-sen-val>Peter was exhausted from his long journey.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_journey_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">22</p>
-      <p><strong>landscape</strong>: Once you visit Sapa, you will be attracted by its breathtaking landscape.</p>
-      <p class="center"><img src="./ielts-5/i_landscape_n.jpeg" /></p>
+      <p class="number" data-order>22</p>
+      <p data-row><strong data-wd-val>landscape: </strong><span data-sen-val>Once you visit Sapa, you will be attracted by its breathtaking landscape.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_landscape_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">23</p>
-      <p><strong>local</strong>: When visiting Ho Chi Minh city, tourists can go shopping at many local markets such as Ben Thanh, Cho Lon...</p>
-      <p class="center"><img src="./ielts-5/i_local_adj.jpeg" /></p>
+      <p class="number" data-order>23</p>
+      <p data-row><strong data-wd-val>local: </strong><span data-sen-val>When visiting Ho Chi Minh city, tourists can go shopping at many local markets such as Ben Thanh, Cho Lon...</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_local_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">24</p>
-      <p><strong>luggage</strong>: Andrew regretted that he carried too much luggage for this trip.</p>
-      <p class="center"><img src="./ielts-5/i_luggage_n.jpeg" /></p>
+      <p class="number" data-order>24</p>
+      <p data-row><strong data-wd-val>luggage: </strong><span data-sen-val>Andrew regretted that he carried too much luggage for this trip.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_luggage_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">25</p>
-      <p><strong>luxurious</strong>: Peter stays at a luxurious spa resort on his summer vacation.</p>
-      <p class="center"><img src="./ielts-5/i_luxurious_adj.jpeg" /></p>
+      <p class="number" data-order>25</p>
+      <p data-row><strong data-wd-val>luxurious: </strong><span data-sen-val>Peter stays at a luxurious spa resort on his summer vacation.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_luxurious_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">26</p>
-      <p><strong>mountainous</strong>: Exploring the mountainous regions of Vietnam is a wonderful experience.</p>
-      <p class="center"><img src="./ielts-5/i_mountainous_adj.jpeg" /></p>
+      <p class="number" data-order>26</p>
+      <p data-row><strong data-wd-val>mountainous: </strong><span data-sen-val>Exploring the mountainous regions of Vietnam is a wonderful experience.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_mountainous_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">27</p>
-      <p><strong>peaceful</strong>: My grandfather and I used to go fishing at this peaceful lake.</p>
-      <p class="center"><img src="./ielts-5/i_peaceful_adj.jpeg" /></p>
+      <p class="number" data-order>27</p>
+      <p data-row><strong data-wd-val>peaceful: </strong><span data-sen-val>My grandfather and I used to go fishing at this peaceful lake.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_peaceful_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">28</p>
-      <p><strong>peak</strong>: Finally, George succeeded in conquering the highest peak in the world.</p>
-      <p class="center"><img src="./ielts-5/i_peak_n.jpeg" /></p>
+      <p class="number" data-order>28</p>
+      <p data-row><strong data-wd-val>peak: </strong><span data-sen-val>Finally, George succeeded in conquering the highest peak in the world.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_peak_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">29</p>
-      <p><strong>picturesque</strong>: This village is one of the most picturesque fishing villages in the bay.</p>
-      <p class="center"><img src="./ielts-5/i_picturesque_adj.jpeg" /></p>
+      <p class="number" data-order>29</p>
+      <p data-row><strong data-wd-val>picturesque: </strong><span data-sen-val>This village is one of the most picturesque fishing villages in the bay.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_picturesque_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">30</p>
-      <p><strong>polluted</strong>: The tourist is surprised at how polluted this place is.</p>
-      <p class="center"><img src="./ielts-5/i_polluted_adj.jpeg" /></p>
+      <p class="number" data-order>30</p>
+      <p data-row><strong data-wd-val>polluted: </strong><span data-sen-val>The tourist is surprised at how polluted this place is.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_polluted_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">31</p>
-      <p><strong>quaint</strong>: The tourists found the ethnic community's old customs very quaint.</p>
-      <p class="center"><img src="./ielts-5/i_quaint_adj.jpeg" /></p>
+      <p class="number" data-order>31</p>
+      <p data-row><strong data-wd-val>quaint: </strong><span data-sen-val>The tourists found the ethnic community's old customs very quaint.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_quaint_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">32</p>
-      <p><strong>remote</strong>: My uncle lives a very modest life in a remote area in Vietnam.</p>
-      <p class="center"><img src="./ielts-5/i_remote_adj.jpeg" /></p>
+      <p class="number" data-order>32</p>
+      <p data-row><strong data-wd-val>remote: </strong><span data-sen-val>My uncle lives a very modest life in a remote area in Vietnam.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_remote_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">33</p>
-      <p><strong>rough</strong>: The path from the foot of the mountain to its peak is very rough.</p>
-      <p class="center"><img src="./ielts-5/i_rough_adj.jpeg" /></p>
+      <p class="number" data-order>33</p>
+      <p data-row><strong data-wd-val>rough: </strong><span data-sen-val>The path from the foot of the mountain to its peak is very rough.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_rough_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">34</p>
-      <p><strong>scenic</strong>: If we travel by train, we can enjoy the scenic route from Ho Chi Minh city to Hanoi.</p>
-      <p class="center"><img src="./ielts-5/i_scenic_adj.jpeg" /></p>
+      <p class="number" data-order>34</p>
+      <p data-row><strong data-wd-val>scenic: </strong><span data-sen-val>If we travel by train, we can enjoy the scenic route from Ho Chi Minh city to Hanoi.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_scenic_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">35</p>
-      <p><strong>stunning</strong>: Peter was totally impressed by the stunning view of sunset.</p>
-      <p class="center"><img src="./ielts-5/i_stunning_adj.jpeg" /></p>
+      <p class="number" data-order>35</p>
+      <p data-row><strong data-wd-val>stunning: </strong><span data-sen-val>Peter was totally impressed by the stunning view of sunset.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_stunning_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">36</p>
-      <p><strong>tough</strong>: In spite of his age, the old trekker is still tougher than his young fellows.</p>
-      <p class="center"><img src="./ielts-5/i_tough_adj.jpeg" /></p>
+      <p class="number" data-order>36</p>
+      <p data-row><strong data-wd-val>tough: </strong><span data-sen-val>In spite of his age, the old trekker is still tougher than his young fellows.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_tough_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">37</p>
-      <p><strong>tourism</strong>: River tourism has attracted an increasing number of tourists.</p>
-      <p class="center"><img src="./ielts-5/i_tourism_n.jpeg" /></p>
+      <p class="number" data-order>37</p>
+      <p data-row><strong data-wd-val>tourism: </strong><span data-sen-val>River tourism has attracted an increasing number of tourists.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_tourism_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">38</p>
-      <p><strong>traditional</strong>: Tet is the biggest traditional holiday in Vietnam.</p>
-      <p class="center"><img src="./ielts-5/i_traditional_adj.jpeg" /></p>
+      <p class="number" data-order>38</p>
+      <p data-row><strong data-wd-val>traditional: </strong><span data-sen-val>Tet is the biggest traditional holiday in Vietnam.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_traditional_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">39</p>
-      <p><strong>travel</strong>: I had a chance to visit the Leaning Tower of Pisa when traveling to Italy.</p>
-      <p class="center"><img src="./ielts-5/i_travel_v.jpeg" /></p>
+      <p class="number" data-order>39</p>
+      <p data-row><strong data-wd-val>travel: </strong><span data-sen-val>I had a chance to visit the Leaning Tower of Pisa when traveling to Italy.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_travel_v.jpeg" /></p>
     </li>
     <li>
-      <p class="number">40</p>
-      <p><strong>trend</strong>: Organizing outdoor activities for employees is a current trend in team building.</p>
-      <p class="center"><img src="./ielts-5/i_trend_n.jpeg" /></p>
+      <p class="number" data-order>40</p>
+      <p data-row><strong data-wd-val>trend: </strong><span data-sen-val>Organizing outdoor activities for employees is a current trend in team building.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_trend_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">41</p>
-      <p><strong>trip</strong>: I took a road trip to Las Vegas with my friends last year.</p>
-      <p class="center"><img src="./ielts-5/i_trip_n.jpeg" /></p>
+      <p class="number" data-order>41</p>
+      <p data-row><strong data-wd-val>trip: </strong><span data-sen-val>I took a road trip to Las Vegas with my friends last year.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_trip_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">42</p>
-      <p><strong>unspoiled</strong>: Tourists really enjoy their journeys to unspoiled countryside of Vietnam.</p>
-      <p class="center"><img src="./ielts-5/i_unspoilt_adj.jpeg" /></p>
+      <p class="number" data-order>42</p>
+      <p data-row><strong data-wd-val>unspoiled: </strong><span data-sen-val>Tourists really enjoy their journeys to unspoiled countryside of Vietnam.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_unspoilt_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">43</p>
-      <p><strong>urban</strong>: Ho Chi Minh city has 19 urban districts and 5 suburban districts.</p>
-      <p class="center"><img src="./ielts-5/i_urban_adj.jpeg" /></p>
+      <p class="number" data-order>43</p>
+      <p data-row><strong data-wd-val>urban: </strong><span data-sen-val>Ho Chi Minh city has 19 urban districts and 5 suburban districts.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_urban_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">44</p>
-      <p><strong>village</strong>: There are still many poor villages in rural areas in Vietnam.</p>
-      <p class="center"><img src="./ielts-5/i_village_n.jpeg" /></p>
+      <p class="number" data-order>44</p>
+      <p data-row><strong data-wd-val>village: </strong><span data-sen-val>There are still many poor villages in rural areas in Vietnam.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_village_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">45</p>
-      <p><strong>advertise</strong>: Peter is tempted to buy the new car advertised on TV.</p>
-      <p class="center"><img src="./ielts-5/i_advertise_v.jpeg" /></p>
+      <p class="number" data-order>45</p>
+      <p data-row><strong data-wd-val>advertise: </strong><span data-sen-val>Peter is tempted to buy the new car advertised on TV.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_advertise_v.jpeg" /></p>
     </li>
     <li>
-      <p class="number">46</p>
-      <p><strong>apply</strong>: The boss' son applies for the job by himself because he doesn't want to depend on his father.</p>
-      <p class="center"><img src="./ielts-5/i_apply_v.jpeg" /></p>
+      <p class="number" data-order>46</p>
+      <p data-row><strong data-wd-val>apply: </strong><span data-sen-val>The boss' son applies for the job by himself because he doesn't want to depend on his father.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_apply_v.jpeg" /></p>
     </li>
     <li>
-      <p class="number">47</p>
-      <p><strong>boss</strong>: Andrew always disappoints his boss because he is so incompetent and lazy.</p>
-      <p class="center"><img src="./ielts-5/i_boss_n.jpeg" /></p>
+      <p class="number" data-order>47</p>
+      <p data-row><strong data-wd-val>boss: </strong><span data-sen-val>Andrew always disappoints his boss because he is so incompetent and lazy.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_boss_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">48</p>
-      <p><strong>campaign</strong>: A great proportion of the expenses in a presidential campaign are related to media and advertising.</p>
-      <p class="center"><img src="./ielts-5/i_campaign_n.jpeg" /></p>
+      <p class="number" data-order>48</p>
+      <p data-row><strong data-wd-val>campaign: </strong><span data-sen-val>A great proportion of the expenses in a presidential campaign are related to media and advertising.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_campaign_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">49</p>
-      <p><strong>candidate</strong>: Andy overcame many candidates to secure this position.</p>
-      <p class="center"><img src="./ielts-5/i_candidate_n.jpeg" /></p>
+      <p class="number" data-order>49</p>
+      <p data-row><strong data-wd-val>candidate: </strong><span data-sen-val>Andy overcame many candidates to secure this position.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_candidate_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">50</p>
-      <p><strong>career</strong>: I chose information technology as a career although it was quite difficult.</p>
-      <p class="center"><img src="./ielts-5/i_career_n.jpeg" /></p>
+      <p class="number" data-order>50</p>
+      <p data-row><strong data-wd-val>career: </strong><span data-sen-val>I chose information technology as a career although it was quite difficult.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_career_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">51</p>
-      <p><strong>casual</strong>: Peter was surprised to find out that he was hired to work just as a casual employee.</p>
-      <p class="center"><img src="./ielts-5/i_casual_adj.jpeg" /></p>
+      <p class="number" data-order>51</p>
+      <p data-row><strong data-wd-val>casual: </strong><span data-sen-val>Peter was surprised to find out that he was hired to work just as a casual employee.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_casual_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">52</p>
-      <p><strong>clerk</strong>: The clerk of our company is very pretty and graceful.</p>
-      <p class="center"><img src="./ielts-5/i_clerk_n.jpeg" /></p>
+      <p class="number" data-order>52</p>
+      <p data-row><strong data-wd-val>clerk: </strong><span data-sen-val>The clerk of our company is very pretty and graceful.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_clerk_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">53</p>
-      <p><strong>client</strong>: The client is asking John about the prices of these new products.</p>
-      <p class="center"><img src="./ielts-5/i_client_n.jpeg" /></p>
+      <p class="number" data-order>53</p>
+      <p data-row><strong data-wd-val>client: </strong><span data-sen-val>The client is asking John about the prices of these new products.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_client_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">54</p>
-      <p><strong>colleague</strong>: Andrew coordinates with his colleagues to fulfill his duties.</p>
-      <p class="center"><img src="./ielts-5/i_colleague_n.jpeg" /></p>
+      <p class="number" data-order>54</p>
+      <p data-row><strong data-wd-val>colleague: </strong><span data-sen-val>Andrew coordinates with his colleagues to fulfill his duties.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_colleague_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">55</p>
-      <p><strong>company</strong>: My brother has been working as an intern in this company for 3 months.</p>
-      <p class="center"><img src="./ielts-5/i_company_n.jpeg" /></p>
+      <p class="number" data-order>55</p>
+      <p data-row><strong data-wd-val>company: </strong><span data-sen-val>My brother has been working as an intern in this company for 3 months.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_company_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">56</p>
-      <p><strong>competitor</strong>: The two competitors try their best to win the speed typing contest.</p>
-      <p class="center"><img src="./ielts-5/i_competitor_v.jpeg" /></p>
+      <p class="number" data-order>56</p>
+      <p data-row><strong data-wd-val>competitor: </strong><span data-sen-val>The two competitors try their best to win the speed typing contest.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_competitor_v.jpeg" /></p>
     </li>
     <li>
-      <p class="number">57</p>
-      <p><strong>consumer</strong>: The store's wide variety of products makes consumers very confused.</p>
-      <p class="center"><img src="./ielts-5/i_consumer_n.jpeg" /></p>
+      <p class="number" data-order>57</p>
+      <p data-row><strong data-wd-val>consumer: </strong><span data-sen-val>The store's wide variety of products makes consumers very confused.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_consumer_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">58</p>
-      <p><strong>credibility</strong>: The new employee succeeded in building credibility at work thanks to his honesty.</p>
-      <p class="center"><img src="./ielts-5/i_credibility_n.jpeg" /></p>
+      <p class="number" data-order>58</p>
+      <p data-row><strong data-wd-val>credibility: </strong><span data-sen-val>The new employee succeeded in building credibility at work thanks to his honesty.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_credibility_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">59</p>
-      <p><strong>customize</strong>: The salesman customizes the discount policy to satisfy his clients.</p>
-      <p class="center"><img src="./ielts-5/i_customize_n.jpeg" /></p>
+      <p class="number" data-order>59</p>
+      <p data-row><strong data-wd-val>customize: </strong><span data-sen-val>The salesman customizes the discount policy to satisfy his clients.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_customize_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">60</p>
-      <p><strong>demanding</strong>: My boss is so demanding that he is never satisfied with my working performance.</p>
-      <p class="center"><img src="./ielts-5/i_demanding_adj.jpeg" /></p>
+      <p class="number" data-order>60</p>
+      <p data-row><strong data-wd-val>demanding: </strong><span data-sen-val>My boss is so demanding that he is never satisfied with my working performance.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_demanding_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">61</p>
-      <p><strong>earn</strong>: Andy earns about 2,000 dollars a month from working at this cafeteria.</p>
-      <p class="center"><img src="./ielts-5/i_earn_v.jpeg" /></p>
+      <p class="number" data-order>61</p>
+      <p data-row><strong data-wd-val>earn: </strong><span data-sen-val>Andy earns about 2,000 dollars a month from working at this cafeteria.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_earn_v.jpeg" /></p>
     </li>
     <li>
-      <p class="number">62</p>
-      <p><strong>economic</strong>: A remarkable increase in gold price is a consequence of the economic crisis.</p>
-      <p class="center"><img src="./ielts-5/i_economic_adj.jpeg" /></p>
+      <p class="number" data-order>62</p>
+      <p data-row><strong data-wd-val>economic: </strong><span data-sen-val>A remarkable increase in gold price is a consequence of the economic crisis.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_economic_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">63</p>
-      <p><strong>employ</strong>: My company needs to employ two more janitors.</p>
-      <p class="center"><img src="./ielts-5/i_employ_v.jpeg" /></p>
+      <p class="number" data-order>63</p>
+      <p data-row><strong data-wd-val>employ: </strong><span data-sen-val>My company needs to employ two more janitors.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_employ_v.jpeg" /></p>
     </li>
     <li>
-      <p class="number">64</p>
-      <p><strong>endorse</strong>: The safety of this washing-powder is endorsed by renowned experts.</p>
-      <p class="center"><img src="./ielts-5/i_endorse_v.jpeg" /></p>
+      <p class="number" data-order>64</p>
+      <p data-row><strong data-wd-val>endorse: </strong><span data-sen-val>The safety of this washing-powder is endorsed by renowned experts.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_endorse_v.jpeg" /></p>
     </li>
     <li>
-      <p class="number">65</p>
-      <p><strong>exhausting</strong>: The long and exhausting work shift really wore him out.</p>
-      <p class="center"><img src="./ielts-5/i_exhausting_adj.jpeg" /></p>
+      <p class="number" data-order>65</p>
+      <p data-row><strong data-wd-val>exhausting: </strong><span data-sen-val>The long and exhausting work shift really wore him out.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_exhausting_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">66</p>
-      <p><strong>experience</strong>: Thanks to his three-year experience, Justin can work faster and more effectively than his colleagues.</p>
-      <p class="center"><img src="./ielts-5/i_experience_n.jpeg" /></p>
+      <p class="number" data-order>66</p>
+      <p data-row><strong data-wd-val>experience: </strong><span data-sen-val>Thanks to his three-year experience, Justin can work faster and more effectively than his colleagues.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_experience_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">67</p>
-      <p><strong>goods</strong>: There are still many goods in the warehouse. We have to find a way to sell them.</p>
-      <p class="center"><img src="./ielts-5/i_goods_n.jpeg" /></p>
+      <p class="number" data-order>67</p>
+      <p data-row><strong data-wd-val>goods: </strong><span data-sen-val>There are still many goods in the warehouse. We have to find a way to sell them.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_goods_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">68</p>
-      <p><strong>hospitality</strong>: Their hospitality makes the guests very content.</p>
-      <p class="center"><img src="./ielts-5/i_hospitality_n.jpeg" /></p>
+      <p class="number" data-order>68</p>
+      <p data-row><strong data-wd-val>hospitality: </strong><span data-sen-val>Their hospitality makes the guests very content.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_hospitality_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">69</p>
-      <p><strong>income</strong>: The boss earns a great income while his employees have to struggle to have enough money to live.</p>
-      <p class="center"><img src="./ielts-5/i_income_n.jpeg" /></p>
+      <p class="number" data-order>69</p>
+      <p data-row><strong data-wd-val>income: </strong><span data-sen-val>The boss earns a great income while his employees have to struggle to have enough money to live.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_income_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">70</p>
-      <p><strong>industry</strong>: Vietnam has applied modern technology in manufacturing industries.</p>
-      <p class="center"><img src="./ielts-5/i_industry_n.jpeg" /></p>
+      <p class="number" data-order>70</p>
+      <p data-row><strong data-wd-val>industry: </strong><span data-sen-val>Vietnam has applied modern technology in manufacturing industries.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_industry_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">71</p>
-      <p><strong>interview</strong>: I was still nervous during the job interview although I had prepared for it very well.</p>
-      <p class="center"><img src="./ielts-5/i_interview_n.jpeg" /></p>
+      <p class="number" data-order>71</p>
+      <p data-row><strong data-wd-val>interview: </strong><span data-sen-val>I was still nervous during the job interview although I had prepared for it very well.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_interview_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">72</p>
-      <p><strong>invest</strong>: Mr Thomas decided to use all his money to invest in stocks and shares.</p>
-      <p class="center"><img src="./ielts-5/i_invest_v.jpeg" /></p>
+      <p class="number" data-order>72</p>
+      <p data-row><strong data-wd-val>invest: </strong><span data-sen-val>Mr Thomas decided to use all his money to invest in stocks and shares.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_invest_v.jpeg" /></p>
     </li>
     <li>
-      <p class="number">73</p>
-      <p><strong>job</strong>: There is a wide range of job choices that we can pursue.</p>
-      <p class="center"><img src="./ielts-5/i_job_n.jpeg" /></p>
+      <p class="number" data-order>73</p>
+      <p data-row><strong data-wd-val>job: </strong><span data-sen-val>There is a wide range of job choices that we can pursue.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_job_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">74</p>
-      <p><strong>laborer</strong>: The laborer is cleaning up debris on the construction site.</p>
-      <p class="center"><img src="./ielts-5/i_labourer_n.jpeg" /></p>
+      <p class="number" data-order>74</p>
+      <p data-row><strong data-wd-val>laborer: </strong><span data-sen-val>The laborer is cleaning up debris on the construction site.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_labourer_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">75</p>
-      <p><strong>management</strong>: We have just set up some surveillance cameras in the factory to improve our employee performance management.</p>
-      <p class="center"><img src="./ielts-5/i_management_n.jpeg" /></p>
+      <p class="number" data-order>75</p>
+      <p data-row><strong data-wd-val>management: </strong><span data-sen-val>We have just set up some surveillance cameras in the factory to improve our employee performance management.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_management_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">76</p>
-      <p><strong>market</strong>: The sale of my company's product in the American market continues to decline.</p>
-      <p class="center"><img src="./ielts-5/i_market_n.jpeg" /></p>
+      <p class="number" data-order>76</p>
+      <p data-row><strong data-wd-val>market: </strong><span data-sen-val>The sale of my company's product in the American market continues to decline.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_market_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">77</p>
-      <p><strong>marketing</strong>: The purpose of marketing is to make consumers buy the product you sell.</p>
-      <p class="center"><img src="./ielts-5/i_marketing_n.jpeg" /></p>
+      <p class="number" data-order>77</p>
+      <p data-row><strong data-wd-val>marketing: </strong><span data-sen-val>The purpose of marketing is to make consumers buy the product you sell.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_marketing_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">78</p>
-      <p><strong>meeting</strong>: The manager was very angry because some of his employees fell asleep during the meeting.</p>
-      <p class="center"><img src="./ielts-5/i_meeting_n.jpeg" /></p>
+      <p class="number" data-order>78</p>
+      <p data-row><strong data-wd-val>meeting: </strong><span data-sen-val>The manager was very angry because some of his employees fell asleep during the meeting.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_meeting_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">79</p>
-      <p><strong>money</strong>: Money is the only thing that Peter is dreaming about right now.</p>
-      <p class="center"><img src="./ielts-5/i_money_n.jpeg" /></p>
+      <p class="number" data-order>79</p>
+      <p data-row><strong data-wd-val>money: </strong><span data-sen-val>Money is the only thing that Peter is dreaming about right now.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_money_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">80</p>
-      <p><strong>monotonous</strong>: No one wants to stop by his store because it is so monotonous.</p>
-      <p class="center"><img src="./ielts-5/i_monotonous_adj.jpeg" /></p>
+      <p class="number" data-order>80</p>
+      <p data-row><strong data-wd-val>monotonous: </strong><span data-sen-val>No one wants to stop by his store because it is so monotonous.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_monotonous_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">81</p>
-      <p><strong>niche</strong>: Mr James feels that he has found his niche when he becomes the CEO of this company.</p>
-      <p class="center"><img src="./ielts-5/i_niche_n.jpeg" /></p>
+      <p class="number" data-order>81</p>
+      <p data-row><strong data-wd-val>niche: </strong><span data-sen-val>Mr James feels that he has found his niche when he becomes the CEO of this company.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_niche_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">82</p>
-      <p><strong>occupation</strong>: His prime occupation was construction engineering.</p>
-      <p class="center"><img src="./ielts-5/i_occupation_n.jpeg" /></p>
+      <p class="number" data-order>82</p>
+      <p data-row><strong data-wd-val>occupation: </strong><span data-sen-val>His prime occupation was construction engineering.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_occupation_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">83</p>
-      <p><strong>office</strong>: The office of Blueway is designed to enhance the productivity of their workers.</p>
-      <p class="center"><img src="./ielts-5/i_office_n.jpeg" /></p>
+      <p class="number" data-order>83</p>
+      <p data-row><strong data-wd-val>office: </strong><span data-sen-val>The office of Blueway is designed to enhance the productivity of their workers.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_office_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">84</p>
-      <p><strong>overtime</strong>: Peter had to do eight hours' overtime this week because he was asked to finish his task as soon as possible.</p>
-      <p class="center"><img src="./ielts-5/i_overtime_n.jpeg" /></p>
+      <p class="number" data-order>84</p>
+      <p data-row><strong data-wd-val>overtime: </strong><span data-sen-val>Peter had to do eight hours' overtime this week because he was asked to finish his task as soon as possible.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_overtime_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">85</p>
-      <p><strong>packaging</strong>: This food company only uses colorful packaging to pack their products.</p>
-      <p class="center"><img src="./ielts-5/i_packaging_n.jpeg" /></p>
+      <p class="number" data-order>85</p>
+      <p data-row><strong data-wd-val>packaging: </strong><span data-sen-val>This food company only uses colorful packaging to pack their products.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_packaging_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">86</p>
-      <p><strong>part-time</strong>: This student works as a part-time employee at McDonald's every weekend.</p>
-      <p class="center"><img src="./ielts-5/i_part-time_adj.jpeg" /></p>
+      <p class="number" data-order>86</p>
+      <p data-row><strong data-wd-val>part-time: </strong><span data-sen-val>This student works as a part-time employee at McDonald's every weekend.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_part-time_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">87</p>
-      <p><strong>pay</strong>: Peter felt really happy when he received his first pay.</p>
-      <p class="center"><img src="./ielts-5/i_pay_n.jpeg" /></p>
+      <p class="number" data-order>87</p>
+      <p data-row><strong data-wd-val>pay: </strong><span data-sen-val>Peter felt really happy when he received his first pay.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_pay_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">88</p>
-      <p><strong>perk</strong>: The company gave Mr Robert a sports car as a perk to show him their appreciation.</p>
-      <p class="center"><img src="./ielts-5/i_perk_n.jpeg" /></p>
+      <p class="number" data-order>88</p>
+      <p data-row><strong data-wd-val>perk: </strong><span data-sen-val>The company gave Mr Robert a sports car as a perk to show him their appreciation.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_perk_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">89</p>
-      <p><strong>persuade</strong>: The real estate agent persuades me to buy this house for $100,000.</p>
-      <p class="center"><img src="./ielts-5/i_persuade_v.jpeg" /></p>
+      <p class="number" data-order>89</p>
+      <p data-row><strong data-wd-val>persuade: </strong><span data-sen-val>The real estate agent persuades me to buy this house for $100,000.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_persuade_v.jpeg" /></p>
     </li>
     <li>
-      <p class="number">90</p>
-      <p><strong>product</strong>: Blueup is introducing English language flashcards - their latest product to consumers.</p>
-      <p class="center"><img src="./ielts-5/i_product_n.jpeg" /></p>
+      <p class="number" data-order>90</p>
+      <p data-row><strong data-wd-val>product: </strong><span data-sen-val>Blueup is introducing English language flashcards - their latest product to consumers.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_product_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">91</p>
-      <p><strong>promote</strong>: Mr Thomas was promoted to general manager after a long time of working for this company.</p>
-      <p class="center"><img src="./ielts-5/i_promote_v.jpeg" /></p>
+      <p class="number" data-order>91</p>
+      <p data-row><strong data-wd-val>promote: </strong><span data-sen-val>Mr Thomas was promoted to general manager after a long time of working for this company.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_promote_v.jpeg" /></p>
     </li>
     <li>
-      <p class="number">92</p>
-      <p><strong>prospect</strong>: The CEO confirms that our company's business prospects are really good.</p>
-      <p class="center"><img src="./ielts-5/i_prospect_n.jpeg" /></p>
+      <p class="number" data-order>92</p>
+      <p data-row><strong data-wd-val>prospect: </strong><span data-sen-val>The CEO confirms that our company's business prospects are really good.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_prospect_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">93</p>
-      <p><strong>qualification</strong>: All of his qualifications meet the requirements of this position.</p>
-      <p class="center"><img src="./ielts-5/i_qualification_n.jpeg" /></p>
+      <p class="number" data-order>93</p>
+      <p data-row><strong data-wd-val>qualification: </strong><span data-sen-val>All of his qualifications meet the requirements of this position.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_qualification_n.jpeg" /></p>
     </li>
     <li>
-      <p class="number">94</p>
-      <p><strong>redundant</strong>: The company doesn't need two manager, so they have to make one of them redundant.</p>
-      <p class="center"><img src="./ielts-5/i_redundant_adj.jpeg" /></p>
+      <p class="number" data-order>94</p>
+      <p data-row><strong data-wd-val>redundant: </strong><span data-sen-val>The company doesn't need two manager, so they have to make one of them redundant.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_redundant_adj.jpeg" /></p>
     </li>
     <li>
-      <p class="number">95</p>
-      <p><strong>request</strong>: The workers go on strike to request for a salary increase.</p>
-      <p class="center"><img src="./ielts-5/i_request_v.jpeg" /></p>
+      <p class="number" data-order>95</p>
+      <p data-row><strong data-wd-val>request: </strong><span data-sen-val>The workers go on strike to request for a salary increase.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_request_v.jpeg" /></p>
     </li>
     <li>
-      <p class="number">96</p>
-      <p><strong>retail</strong>: This store retails the new rice cooker for only $30.</p>
-      <p class="center"><img src="./ielts-5/i_retail_v.jpeg" /></p>
+      <p class="number" data-order>96</p>
+      <p data-row><strong data-wd-val>retail: </strong><span data-sen-val>This store retails the new rice cooker for only $30.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_retail_v.jpeg" /></p>
     </li>
     <li>
-      <p class="number">97</p>
-      <p><strong>retire</strong>: Mr Robert leads a leisurely life in Hawaii after retiring.</p>
-      <p class="center"><img src="./ielts-5/i_retire_v.jpeg" /></p>
+      <p class="number" data-order>97</p>
+      <p data-row><strong data-wd-val>retire: </strong><span data-sen-val>Mr Robert leads a leisurely life in Hawaii after retiring.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_retire_v.jpeg" /></p>
     </li>
     <li>
-      <p class="number">98</p>
-      <p><strong>rewarding</strong>: This is a very rewarding book for business. You should read it.</p>
-      <p class="center"><img src="./ielts-5/i_rewarding_adj.jpeg" /></p>
+      <p class="number" data-order>98</p>
+      <p data-row><strong data-wd-val>rewarding: </strong><span data-sen-val>This is a very rewarding book for business. You should read it.</span></p>
+      <p class="center"><img data-src src="./ielts-5/i_rewarding_adj.jpeg" /></p>
     </li>
   </ul>
+
+  <div class="controls">
+    <form id="fadeForm">
+      <fieldset class="dublicate-control">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="shuffleItems">
+          <label class="form-check-label" for="shuffleItems">Reverse List</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="fadeStuff">
+          <label class="form-check-label" for="fadeStuff">Fade Stuff</label>
+        </div>
+      </fieldset>
+    </form>
+    <hr>
+    <form id="controlsForm">
+      <fieldset class="toggle-control">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="hideStuff" checked value="showAll" id="showAll">
+          <label class="form-check-label" for="showAll">Show all</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="hideStuff" value="hideSen" id="hideSen">
+          <label class="form-check-label" for="hideSen">Hide sentence</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="hideStuff" value="hideWord" id="hideWord">
+          <label class="form-check-label" for="hideWord">Hide word</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="hideStuff" value="hideImg" id="hideImg">
+          <label class="form-check-label" for="hideImg">Hide image</label>
+        </div>
+        <div class="form-check full">
+          <input class="form-check-input" type="radio" name="hideStuff" value="hideAll" id="hideAll">
+          <label class="form-check-label" for="hideAll">Hide all but image</label>
+        </div>
+      </fieldset>
+      <fieldset class="dublicate-control">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="hideOrder" id="hideOrder">
+          <label class="form-check-label" for="hideOrder">Hide order</label>
+        </div>
+      </fieldset>
+    </form>
+    <form id="dublicateForm">  
+      <fieldset class="dublicate-control">
+        <div class="form-group">
+          <label for="dublicateSens">Dublicate Sentence</label>
+          <input class="form-control" type="number" value="2" id="dublicateSens" placeholder="How many times?">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" id="btnDublicate" class="btn btn-primary">Dub</button>
+            <button type="button" id="btnReset" class="btn btn-secondary">Clear</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <button type="button" class="nav-btn nav-prev" id="goPrev">Prev</button>
+  <button type="button" class="nav-btn nav-next" id="goNext">Next</button>
+  <form class="to-top-form" id="toEleForm">
+    <input class="form-control" type="number" value="1" id="goToEl">
+    <button type="submit" class="to-top" id="toTop">Go to</button>
+  </form>
+  <script src="assets/popper.min.js"></script>
+  <script src="assets/bootstrap.min.js"></script>
+  <script defer="" src="assets/script.js"></script>
 </body>
 
 </html>
