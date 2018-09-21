@@ -144,14 +144,15 @@ $(document).ready(function() {
   $('#toEleForm').on('submit', function(e) {
     e.preventDefault();
     let num = $('#goToEl').val();
-    if (num > 0 && num < 100) {
-      let el = $('li')[num - 1];
-
-      if (el) {
-        $('html,body').animate({
-          scrollTop: $(el).offset().top - 30
-        });
-      }
+    let el = $('li')[num - 1];
+    if (el) {
+      $('html,body').animate({
+        scrollTop: $(el).offset().top - 30
+      }, 5);
+    } else {
+      $('html,body').animate({
+        scrollTop: $('.controls').offset().top - 30
+      }, 5);
     }
   });
 
