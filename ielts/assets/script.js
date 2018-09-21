@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	const orgList = $('li');
+
   $('#hideOrder').on("change", function() {
   	console.log($(this));
     if ($(this).is(':checked')) {
@@ -151,10 +153,18 @@ $(document).ready(function() {
   $('#shuffleItems').on('change', function(){
   	$(this).prop('disbaled', true);
 
-  	// let orgList = $('li');
+  	if ($('#fadeStuff').is(':checked')) {
+  		$('#fadeStuff').click();
+  	}
 
-  	// $('ul').innerHTML = _.shuffle(orgList);
-  	console.log(_.shuffle([2, 3, 4, 5, 6]));
+  	if ($(this).is(':checked')) {
+	  	let orgList = $('li');
+	  	$('ul').html('').html(_.shuffle(_.cloneDeep(orgList.clone())));
+	  } else {
+  		$('#btnReset').click();
+  		$('#showAll').click();
+	  	$('ul').html('').html(_.cloneDeep(orgList));
+	  }
 
   	$(this).prop('disbaled', false);
   })
