@@ -52,3 +52,58 @@ p:last-child img {
   display: block;
   margin: 0 auto 20px;
 }
+
+.to-top-form {
+  width: 100px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+button.to-top {
+  -webkit-appearance: none;
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.controls {
+  position: fixed;
+  top: 50%;
+  width: 300px;
+  background: rgba(239, 239, 239, .5);
+  padding: 20px;
+  left: 20px;
+  margin-top: -100px;
+}
+
+.toggle-control {
+  margin: 20px 0;
+}
+
+.toggle-control .form-check {
+  float: left;
+  width: 50%;
+}
+
+.dublicate-control {
+  margin: 0 0 20px;
+}
+
+.dublicate-control label {
+  display: block;
+}
+
+.dublicate-control .form-control,
+.dublicate-control .btn-group {
+  float: left;
+}
+
+.dublicate-control .form-control {
+  width: 100px;
+}
+
+.dublicate-control .btn-group {
+  margin-left: 10px;
+}
