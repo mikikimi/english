@@ -36,9 +36,9 @@ p.number {
   font-weight: bold;
 }
 
-p.number:after {
+/*p.number:after {
   content: '.';
-}
+}*/
 
 p {
   margin-bottom: 0;

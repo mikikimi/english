@@ -36,9 +36,9 @@ p.number {
   font-weight: bold;
 }
 
-p.number:after {
+/*p.number:after {
   content: '.';
-}
+}*/
 
 p {
   margin-bottom: 0;
@@ -131,6 +131,7 @@ button.to-top {
   box-shadow: none !important;
   outline: none !important;
   cursor: pointer;
+  display: none;
 }
 
 .nav-prev {
