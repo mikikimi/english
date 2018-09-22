@@ -89,7 +89,7 @@ button.to-top {
 
 .toggle-control .form-check {
   float: left;
-  width: 50%;
+  width: 100%;
 }
 
 .toggle-control .form-check.full {
