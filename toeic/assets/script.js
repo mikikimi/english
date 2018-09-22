@@ -3,7 +3,6 @@ $(document).ready(function() {
 	const orgList = $('li');
 
   $('#hideOrder').on("change", function() {
-    console.log($(this));
     if ($(this).is(':checked')) {
       $.each($('li'), function() {
         let orderEl = $(this).find('.number');
@@ -23,7 +22,6 @@ $(document).ready(function() {
   });
 
   $('#hideDef').on("change", function() {
-  	console.log($(this));
     if ($(this).is(':checked')) {
       $.each($('li'), function() {
         let defEl = $(this).find('[data-def]');
@@ -144,19 +142,22 @@ $(document).ready(function() {
     $('[data-dublicate]').remove();
   });
 
+  
   $('#toEleForm').on('submit', function(e) {
     e.preventDefault();
     let num = $('#goToEl').val();
-    if (num > 0 && num < 100) {
-      let el = $('li')[num - 1];
-
-      if (el) {
-        $('html,body').animate({
-          scrollTop: $(el).offset().top - 30
-        });
-      }
+    let el = $('li')[num - 1];
+    if (el) {
+      $('html,body').animate({
+        scrollTop: $(el).offset().top - 30
+      }, 5);
+    } else {
+      $('html,body').animate({
+        scrollTop: $('.controls').offset().top - 30
+      }, 5);
     }
   });
+
 
   $('#fadeStuff').on('change', function() {
   	if ($(this).is(':checked')) {
@@ -178,7 +179,7 @@ $(document).ready(function() {
 
   $('#shuffleItems').on('change', function(){
   	$(this).prop('disbaled', true);
-    $('#fadeStuff').prop('checked', false);
+    $('#fadeStuff').prop('checked', false).trigger('change');
 
   	if ($(this).is(':checked')) {
 	  	let orgList = $('li');

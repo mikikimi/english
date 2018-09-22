@@ -69,6 +69,8 @@ button.to-top {
   padding: 10px 20px;
   width: 100%;
   cursor: pointer;
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 .controls {
