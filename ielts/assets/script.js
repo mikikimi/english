@@ -181,12 +181,12 @@ $(document).ready(function() {
     $('#fadeStuff').prop('checked', false).trigger('change');
 
   	if ($(this).is(':checked')) {
-	  	let orgList = $('li');
-	  	$('ul').html('').html(_.shuffle(_.cloneDeep(orgList.clone())));
+	  	let newList = document.getElementsByTagName('li');
+	  	$('ul').html(_.shuffle(newList));
 	  } else {
   		$('#btnReset').click();
   		$('#showAll').click();
-	  	$('ul').html('').html(_.cloneDeep(orgList));
+	  	$('ul').html('').html(orgList);
 	  }
 
   	$(this).prop('disbaled', false);

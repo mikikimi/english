@@ -1,118 +1,64 @@
-http://www.blueup.vn/imagecache/14725/spacer.gif
-http://www.blueup.vn/imagecache/14725/i_back%20down_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_back%20sb%20up_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_break%20down_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_break%20in%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_break%20out_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_break%20sth%20off_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_break%20through_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_bring%20sb%20up_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_bring%20sth%20about_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_bring%20sth%20in_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_bring%20sth%20off_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_bring%20sth%20up_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_call%20for%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_call%20sth%20off_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_carry%20sth%20out_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_catch%20up%20with%20sb_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_count%20on%20sb_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_die%20down_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_drive%20at%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/sth%20out_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_drop%20out%20of_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_end%20up_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_face%20up%20to%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_fall%20behind%20with_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_fall%20for%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_fall%20out_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_hand%20sth%20in_v.jpeg
-http://www.blueup.vn/imagecache/14725/sth%20up_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_keep%20on_v.jpeg
-http://www.blueup.vn/imagecache/14725/sth%20out_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_let%20sb%20down_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_let%20sth%20off_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_play%20on%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_play%20sth%20down_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_point%20sth%20out_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_pull%20through_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_put%20in_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_put%20in%20for%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_put%20into_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_put%20sb%20away_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_put%20sb%20down_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_put%20sb%20off_v.jpeg
-http://www.blueup.vn/imagecache/14725/sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_put%20sb%20out_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_put%20sb%20through_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_put%20sb%20under_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_put%20sb%20up_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_put%20sth%20across_v.jpeg
-http://www.blueup.vn/imagecache/14725/spacer.gif
-http://www.blueup.vn/imagecache/14725/i_put%20sth%20down_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_put%20sth%20forward_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_put%20sth%20off_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_put%20sth%20together_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_put%20up%20with_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_run%20around_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_run%20away%20from%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_run%20into%20sb_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_run%20on_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_run%20out_v.jpeg
-http://www.blueup.vn/imagecache/14725/sth%20down_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_run%20sth%20by%20sb_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_run%20sth%20off_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_run%20sth%20up_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_run%20through%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_run%20to_v.jpeg
-http://www.blueup.vn/imagecache/14725/sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_set%20down%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_set%20in_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_set%20off_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_set%20off%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_set%20sb%20back_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_set%20up%20sb_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_set%20up%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_settle%20down_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_show%20sb%20around_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_take%20after%20sb_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_take%20back%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_take%20in%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_take%20off_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_take%20out%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_take%20over%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_take%20sb%20aback_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_take%20sb%20on_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_take%20sb%20through%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_take%20sb%20up%20on%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_take%20sth%20out%20on%20sb_v.jpeg
-http://www.blueup.vn/imagecache/14725/sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_take%20up%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_take%20up%20with%20sb_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_turn%20in_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_turn%20off%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_turn%20on%20sb_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_turn%20out_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_turn%20sb%20against%20sb_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_turn%20sb%20away_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_turn%20sb%20in_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_turn%20sb%20off_v.jpeg
-http://www.blueup.vn/imagecache/14725/sth%20down_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_turn%20sth%20around_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_turn%20sth%20out_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_turn%20sth%20over_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_turn%20to%20sb_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_use%20sth%20up_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_walk%20off_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_walk%20out%20on%20sb_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_wear%20off_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_wear%20sb%20out_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_work%20at%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_work%20on%20sb_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_work%20on%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_work%20out_v.jpeg
-http://www.blueup.vn/imagecache/14725/spacer.gif
-http://www.blueup.vn/imagecache/14725/i_work%20sth%20off%20(debt)_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_work%20up%20sth_v.jpeg
-http://www.blueup.vn/imagecache/14725/i_work%20up%20to%20sth_v.jpeg	
+1. Burglars beware!
+go out
+When someone goes out, they leave their home and go somewhere else, usually for pleasure.
+•	Brian can't go out because he has to do his homework.
+break in
+When someone breaks in, they use force to enter a place, usually in order to steal something.
+•	Thieves broke in and stole Mrs Green's diamond necklace.
+set off
+When you set off an alarm, you make it start to work.
+•	Gillian burnt the toast and set off the smoke alarm.
+run away
+When you run away, you leave a place fast, usually because you are frightened.
+•	Brave people stand and fight when cowards run away.
+
+
+2 fire, fire!
+fool around
+When people fool around they behave in a silly and irresponsible way.
+•	Stop fooling around and do something useful!
+blaze up
+When something blazes up, it starts to burn strongly.
+•	We thought the fire was out but it suddenly blazed up again.
+call out
+When you call out the fire service, the doctor, the army, etc, you ask them to come and deal with a dangerous situation.
+•	The doctor doesn't like being called out in the middle of the night.
+put out
+When you put out a fire or a light, you make it stop burning.
+•	I used a fire extinguisher to put out the fire.
+
+3 No ticket,	no	ride
+ 
+put out
+When you put out your hand or arm, you stretch it out.
+•	Josh put out his hand and grabbed the rail to stop himself from falling.
+get on
+When you get on a bus , train or plane, you go inside it.
+•	The bus was nearly empty when I
+got on.
+get out
+When  you  get  somethin..g   out,  you  take  it  from inside a container.
+•	We got our books out ready for the lesson.
+get off
+When you get off a bus, train or  plane,  you  leave it. (Note: You get off a bus, train, or plane, but you get out of a car.)
+•	Ring the bell to tell the driver you want to get off.
+
+
+4 feeling tired
+lie down
+When you lie down, you put your body flat on something.
+•	The animals lie down in the long grass so that nobody can see them.
+stretch out
+When you stretch out, you make your body straight and long.
+•	I can't stretch out in this bed. It's too short.
+drop off
+ 
+ 
+When you drop off,  or drop off to asleep.
+ 
+rop off to sleep, you fall
+ 
+•	Granddad dropped off while he was watching the television.
+wake up
+When something wakes you up, it makes you stop being asleep.
+•	Go and wake your brother up and tell him to get ready for school.
