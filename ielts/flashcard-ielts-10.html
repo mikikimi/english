@@ -7,6 +7,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <link href="assets/bootstrap.min.css" rel="stylesheet">
   <link href="assets/style.css" rel="stylesheet">
+  <script type="text/javascript" src="assets/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="assets/lodash.min.js"></script>
 </head>
 
 <body>
@@ -478,6 +480,72 @@
       <p><img data-src src="./ielts-10/i_artificial_a.jpeg" /></p>
     </li>
   </ul>
+  <div class="controls">
+    <form id="fadeForm">
+      <fieldset class="dublicate-control">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="shuffleItems">
+          <label class="form-check-label" for="shuffleItems">Shuffle List</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="fadeStuff">
+          <label class="form-check-label" for="fadeStuff">Fade Stuff</label>
+        </div>
+      </fieldset>
+    </form>
+    <hr>
+    <form id="controlsForm">
+      <fieldset class="toggle-control">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="hideStuff" checked value="showAll" id="showAll">
+          <label class="form-check-label" for="showAll">Show all</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="hideStuff" value="hideSen" id="hideSen">
+          <label class="form-check-label" for="hideSen">Hide sentence</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="hideStuff" value="hideWord" id="hideWord">
+          <label class="form-check-label" for="hideWord">Hide word</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="hideStuff" value="hideImg" id="hideImg">
+          <label class="form-check-label" for="hideImg">Hide image</label>
+        </div>
+        <div class="form-check full">
+          <input class="form-check-input" type="radio" name="hideStuff" value="hideAll" id="hideAll">
+          <label class="form-check-label" for="hideAll">Hide all but image</label>
+        </div>
+      </fieldset>
+      <fieldset class="dublicate-control">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="hideOrder" id="hideOrder">
+          <label class="form-check-label" for="hideOrder">Hide order</label>
+        </div>
+      </fieldset>
+    </form>
+    <form id="dublicateForm">
+      <fieldset class="dublicate-control">
+        <div class="form-group">
+          <label for="dublicateSens">Dublicate Sentence</label>
+          <input class="form-control" type="number" value="2" id="dublicateSens" placeholder="How many times?">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" id="btnDublicate" class="btn btn-primary">Dub</button>
+            <button type="button" id="btnReset" class="btn btn-secondary">Clear</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <!-- <button type="button" class="nav-btn nav-prev" id="goPrev">Prev</button>
+  <button type="button" class="nav-btn nav-next" id="goNext">Next</button> -->
+  <form class="to-top-form" id="toEleForm">
+    <input class="form-control" type="number" value="1" id="goToEl">
+    <button type="submit" class="to-top" id="toTop">Go to</button>
+  </form>
+  <script type="text/javascript" src="assets/popper.min.js"></script>
+  <script type="text/javascript" src="assets/bootstrap.min.js"></script>
+  <script defer="" src="assets/script.js"></script>
 </body>
 
 </html>

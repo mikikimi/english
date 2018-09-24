@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	const orgList = $('li');
+  const orgList = $('li');
 
   $('#hideOrder').on("change", function() {
     if ($(this).is(':checked')) {
@@ -157,40 +157,48 @@ $(document).ready(function() {
   });
 
   $('#fadeStuff').on('change', function() {
-  	if ($(this).is(':checked')) {
-  		// $('#btnReset').click();
-  		$('#showAll').click();
-  		$('#controlsForm :input, #dublicateForm :input').prop('disabled', true);
-  		$.each($('li'), function() {
+    if ($(this).is(':checked')) {
+      // $('#btnReset').click();
+      $('#showAll').click();
+      $('#controlsForm :input, #dublicateForm :input').prop('disabled', true);
+      $.each($('li'), function() {
         let self = $(this);
-  			self.find('[data-row], [data-dublicate]').css('opacity', 0);
-        self.on('mouseover', function(){
+        self.find('[data-row], [data-dublicate]').css('opacity', 0);
+        self.on('mouseover', function() {
           self.find('[data-row], [data-dublicate]').css('opacity', '');
         });
-  		});
-  	} else {
-  		$('#controlsForm :input, #dublicateForm :input').prop('disabled', false);
-  		$.each($('li'), function() {
-  			$(this).find('[data-row], [data-dublicate]').css('opacity', '');
-  		});
-  	}
+      });
+    } else {
+      $('#controlsForm :input, #dublicateForm :input').prop('disabled', false);
+      $.each($('li'), function() {
+        $(this).find('[data-row], [data-dublicate]').css('opacity', '');
+      });
+    }
   });
 
-  $('#shuffleItems').on('change', function(){
-  	$(this).prop('disbaled', true);
+  $('#shuffleItems').on('change', function() {
+    $(this).prop('disbaled', true);
     $('#fadeStuff').prop('checked', false).trigger('change');
 
-  	if ($(this).is(':checked')) {
-	  	let newList = document.getElementsByTagName('li');
-	  	$('ul').html(_.shuffle(newList));
-	  } else {
-  		$('#btnReset').click();
-  		$('#showAll').click();
-	  	$('ul').html('').html(orgList);
-	  }
+    if ($(this).is(':checked')) {
+      let newList = document.getElementsByTagName('li');
+      $('ul').html(_.shuffle(newList));
+    } else {
+      $('#btnReset').click();
+      $('#showAll').click();
+      $('ul').html('').html(orgList);
+    }
 
-  	$(this).prop('disbaled', false);
-  })
+    $(this).prop('disbaled', false);
+  });
+
+  /*$('#noteBlock').on('submit', function(e) {
+    e.preventDefault();
+    var text = $('#noteArea').text();
+    var filename = $('h1').text();
+    var blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+    saveAs(blob, filename + ".txt");
+  });*/
 
 
   setTimeout(function() {

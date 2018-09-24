@@ -141,7 +141,23 @@ button.to-top {
   margin-top: 20px;
 }
 
+.note-block {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  margin-top: -100px;
+  width: 300px;
+}
+
+.note-block textarea {
+  width: 100%;
+}
+
+
 @media screen and (max-width: 840px) {
+  .note-block {
+    display: none;
+  }
   .controls {
     position: static;
     width: 100%;
