@@ -36,6 +36,7 @@ p.number {
   font-weight: bold;
 }
 
+
 /*p.number:after {
   content: '.';
 }*/
@@ -73,14 +74,35 @@ button.to-top {
   outline: none !important;
 }
 
+button.btn-close {
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 5px 10px;
+  margin: 0;
+  border: 0;
+  outline: none !important;
+  box-shadow: none !important;
+  font-size: 12px;
+  position: fixed;
+  top: 50%;
+  display: inline-block;
+  vertical-align: top;
+  left: 40px;
+  margin-top: -190px;
+  cursor: pointer;
+}
+
 .controls {
   position: fixed;
   top: 50%;
   width: 300px;
-  background: rgba(239, 239, 239, .5);
-  padding: 20px;
   left: 20px;
-  margin-top: -180px;
+  margin-top: -200px;
+}
+
+.control-inner {
+  padding: 50px 20px 20px;
+  background: rgba(239, 239, 239, .5);
 }
 
 .toggle-control {
@@ -137,6 +159,7 @@ button.to-top {
 .nav-prev {
   margin-top: -20px;
 }
+
 .nav-next {
   margin-top: 20px;
 }

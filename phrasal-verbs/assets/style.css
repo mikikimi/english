@@ -22,6 +22,7 @@ ul {
   font-size: 18px;
   font-weight: 600;
 }
+
 ol {
   margin: 0;
   padding: 0;
@@ -32,13 +33,16 @@ ol {
 li {
   position: relative;
 }
+
 ol h3 {
   text-align: center;
   margin-bottom: 26px;
 }
+
 ol p {
   margin-top: 12px;
 }
+
 ol p:last-child {
   padding-bottom: 25px;
 }
@@ -51,6 +55,8 @@ p.number {
   font-size: 18px;
   font-weight: bold;
 }
+
+
 
 /*p.number:after {
   content: '.';
@@ -69,6 +75,10 @@ p:last-child {
 p:last-child img {
   display: block;
   margin: 0 auto 20px;
+  max-width: 100%;
+}
+
+img {
   max-width: 100%;
 }
 
@@ -156,6 +166,7 @@ button.to-top {
 .nav-prev {
   margin-top: -20px;
 }
+
 .nav-next {
   margin-top: 20px;
 }
@@ -165,6 +176,7 @@ button.to-top {
     padding-left: 200px;
   }
 }
+
 @media screen and (max-width: 840px) {
   body {
     padding-left: 35px;
@@ -198,4 +210,35 @@ button.to-top {
     padding: 5px;
     font-size: 12px;
   }
+}
+
+
+.editting img {
+  width: 700px;
+  float: left;
+  margin-right: 30px;
+}
+
+.editting .content {
+  width: 800px;
+  min-height: 400px;
+  font-size: 14px;
+  display: inline-block;
+  font-weight: normal;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.editting .text,
+.editting .image {
+  overflow: hidden;
+}
+
+.editting li p:last-child {
+  border-bottom: none;
+  margin: 5px 0 0;
+}
+.editting li {
+  overflow: hidden;
+  margin-bottom: 20px;
 }

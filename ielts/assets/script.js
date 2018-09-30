@@ -2,6 +2,11 @@ $(document).ready(function() {
 
   const orgList = $('li');
 
+  $('#btnCloseControl').on('click', function(){
+    $('.control-inner').toggle();
+    $('#toEleForm').toggle();
+  });
+
   $('#hideOrder').on("change", function() {
     if ($(this).is(':checked')) {
       $.each($('li'), function() {

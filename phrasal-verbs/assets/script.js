@@ -191,12 +191,49 @@ $(document).ready(function() {
 	  }
 
   	$(this).prop('disbaled', false);
-  })
+  });
+
+  $.each($('[data-url]'), function() {
+    let self = $(this);
+    $.get(self.data('url'), function(data, status){
+      self.find('.content').html(data);
+    });
+  });
+
+  $('#saveForm').on('submit', function(e) {
+    e.preventDefault();
+    let content = '';
+    let stackQueue = [];
+
+    $.each($('[data-url]'), function() {
+      let self = $(this).find('.content')[0];
+      content += '<li><p>' + self.innerHTML + '</p></li>';
+      let obj = {obj: '<p>' + self.innerHTML + '</p>', name: $(this).data('file') + '.html'};
+
+      // let blob = new Blob([], {type: "text/plain;charset=utf-8"});
+      stackQueue.push(obj);
+    });
+
+    content = '<html><div>' + content + '</div></html>';
+
+    let blob2 = new Blob([content], {type: "text/plain;charset=utf-8"});
+    saveAs(blob2, "test.html");
+
+    let i = 0;
+    let interVal = setInterval(function(){
+
+      let blob = new Blob([stackQueue[i]['obj']], {type: "text/plain;charset=utf-8"});
+      saveAs(blob, stackQueue[i]['name']);
+
+      if (i == stackQueue.length - 1 || i > 140) {
+        clearInterval(interVal);
+      }
+      i++;
+
+    }, 100);
 
 
-  setTimeout(function() {
-    console.clear();
-  }, 500);
-
+    // $(content).insertAfter($('ul'));
+  });
 
 });
