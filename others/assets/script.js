@@ -30,7 +30,7 @@ $(document).ready(function() {
   $('#toEleForm').on('submit', function(e) {
     e.preventDefault();
     let num = $('#goToEl').val();
-    let el = $('li')[num - 1];
+    let el = $('ul')[num - 1];
     if (el) {
       $('html,body').animate({
         scrollTop: $(el).offset().top - 30

@@ -26,7 +26,7 @@ ul {
 
 li {
   position: relative;
-  margin: 0 0 30px;
+  margin: 0 0 5px;
 }
 
 li.title {
@@ -48,6 +48,14 @@ p.number {
   font-weight: bold;
 }
 
+.audio {
+  display: block;
+  max-width: 100%;
+  width: 600px;
+  margin-top: 20px;
+  margin: 20px auto;
+}
+
 
 /*p.number:after {
   content: '.';
@@ -56,11 +64,12 @@ p.number {
 p {
   margin-bottom: 0;
   margin-top: 5px;
+  font-size: 16px;
 }
 
-p.definition {
+.definition {
   font-style: italic;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .to-top-form {
@@ -155,6 +164,15 @@ button.btn-close {
     width: 100%;
     margin: 30px 0;
   }
+
+  p {
+    font-size: 12px;
+  }
+
+  .definition {
+    font-size: 11px;
+  }
+
 
   p.number {
     right: calc(100% + 5px);
