@@ -23,6 +23,24 @@ $(document).ready(function() {
     });
   });
 
+
+
+  $('#btnToggleAllUnit').on('click', function(){
+    let val = $(this).data('val');
+
+    if (val == 'hide') {
+      $('ul').show();
+      $(this).data('val', '');
+    } else {
+      $('ul').hide();
+      $(this).data('val', 'hide');
+    }
+  });
+
+  $('h6').on('click', function(e) {
+    $(this).next().toggle();
+  });
+
   $('#btnReset').on('click', function() {
     $('[data-dublicate]').remove();
   });
