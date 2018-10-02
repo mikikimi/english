@@ -21,6 +21,31 @@ $(document).ready(function() {
     }
   });
 
+  $('#hideAllWords').on('change', function(){
+    $('#showAll').click();
+    if ($(this).is(':checked')) {
+      $('#hideWord').click();      
+      $('#hideOrder').click();      
+      $('#controlsForm :input, #dublicateForm :input').prop('disabled', true);
+      $.each($('li'), function() {
+        let wdText = $(this).find('[data-wd-val]').data('wd-val');
+
+        wdText = wdText.slice(0, -2);
+        let rex = new RegExp(wdText, 'i');
+
+        $(this).find('[data-sen-val]').html($(this).find('[data-sen-val]').html().replace(rex, '<strong class="wdText" style="color: transparent;">' + wdText + '</strong>'));
+        $(this).find('[data-sen-val]').on('mouseover', function(){
+          $(this).find('.wdText').css('color', '');
+        });
+      });
+    } else {      
+      $('#controlsForm :input, #dublicateForm :input').prop('disabled', false);  
+      $('#hideOrder').click();
+      $('#hideSen').click();   
+      $('#showAll').click();   
+    }
+  });
+
   $('#hideDef').on("change", function() {
     if ($(this).is(':checked')) {
       $.each($('li'), function() {
