@@ -64,6 +64,15 @@ p:last-child img {
   bottom: 20px;
 }
 
+.wdText {
+  border-bottom: 1px solid #eee;
+  display: inline-block;
+  vertical-align: baseline;
+  min-width: 100px;
+  text-align: center;
+  padding: 0 5px;
+}
+
 button.to-top {
   -webkit-appearance: none;
   border: none;
