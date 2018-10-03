@@ -185,41 +185,77 @@ button.btn-close {
   width: 100%;
 }
 
+.audio-block {
+  display: none;
+}
 
 @media screen and (max-width: 840px) {
-  body {
-    padding: 0 20px;
+  .audio-block {
+    display: block;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #ccc;
   }
+
+  .audio-block audio {
+    display: block;
+    width: 100%;
+  }
+
+  .audio-block span {
+    font-style: italic;
+    display: block;
+    margin: 15px 0 5px;
+    padding: 5px 0;
+    border-top: 1px dotted #eee;
+  }
+
+  .audio-block p {
+    border: none;
+  }
+
+  .audio-block p:first-child span {
+    border-top: none;
+  }
+
   .note-block {
     display: none;
   }
+
   .form-check-input {
     margin-top: 3px;
   }
+
   button.btn-close {
     position: static;
     margin-top: 0;
   }
+
   .controls {
     position: static;
     width: 100%;
     margin: 30px 0;
   }
+
   p.number {
     right: calc(100% + 3px);
     top: -3px;
     font-size: 12px;
   }
+
   h1 {
     font-size: 30px;
   }
+
   ul {
     font-size: 14px;
     font-weight: 400;
   }
+
   .to-top-form {
     width: 50px;
   }
+
   button.to-top {
     padding: 5px;
   }
