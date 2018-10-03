@@ -2,6 +2,10 @@ $(document).ready(function() {
 
 	const orgList = $('li');
 
+  if ($(window).width() >= 840) {
+    $('.audio-block').remove();
+  }
+
   $('#hideOrder').on("change", function() {
     if ($(this).is(':checked')) {
       $.each($('li'), function() {

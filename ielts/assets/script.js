@@ -2,6 +2,10 @@ $(document).ready(function() {
 
   const orgList = $('li');
 
+  if ($(window).width() >= 840) {
+    $('.audio-block').remove();
+  }
+
   $('#btnCloseControl').on('click', function(){
     $('.control-inner').toggle();
     $('#toEleForm').toggle();
@@ -221,19 +225,4 @@ $(document).ready(function() {
 
     $(this).prop('disbaled', false);
   });
-
-  /*$('#noteBlock').on('submit', function(e) {
-    e.preventDefault();
-    var text = $('#noteArea').text();
-    var filename = $('h1').text();
-    var blob = new Blob([text], { type: "text/plain;charset=utf-8" });
-    saveAs(blob, filename + ".txt");
-  });*/
-
-
-  setTimeout(function() {
-    console.clear();
-  }, 500);
-
-
 });
