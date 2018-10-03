@@ -125,23 +125,8 @@ button.to-top {
   margin-top: 6px;
 }
 
-.nav-btn {
-  position: fixed;
-  left: calc(50% + 500px);
-  top: 50%;
-  padding: 5px 20px;
-  -webkit-apperance: none;
-  border: none;
-  box-shadow: none !important;
-  outline: none !important;
-  cursor: pointer;
-}
-
-.nav-prev {
-  margin-top: -20px;
-}
-.nav-next {
-  margin-top: 20px;
+.audio-block {
+  display: none;
 }
 
 @media screen and (max-width: 1500px) {
@@ -149,35 +134,75 @@ button.to-top {
     padding-left: 200px;
   }
 }
+
 @media screen and (max-width: 840px) {
+  .form-check-input {
+    margin-top: 3px;
+  }
+
+  .audio-block {
+    display: block;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #ccc;
+  }
+
+  .audio-block audio {
+    display: block;
+    width: 100%;
+  }
+
+  .audio-block span {
+    font-style: italic;
+    display: block;
+    margin: 15px 0 5px;
+    padding: 5px 0;
+    border-top: 1px dotted #eee;
+  }
+
+  .audio-block p {
+    border: none;
+  }
+
+  .audio-block p:first-child span {
+    border-top: none;
+  }
+
   body {
     padding-left: 35px;
   }
+
   .controls {
     position: static;
     width: 100%;
     margin: 30px 0;
   }
+
   p.number {
     right: calc(100% + 5px);
     top: -3px;
     font-size: 12px;
   }
+
   h1 {
     font-size: 30px;
   }
+
   ul {
     font-size: 14px;
     font-weight: 400;
   }
+
   .to-top-form {
     width: 40px;
   }
+
   .to-top-form .form-control {
     width: 40px;
     font-size: 12px;
     padding: 5px;
   }
+
   button.to-top {
     padding: 5px;
     font-size: 12px;
