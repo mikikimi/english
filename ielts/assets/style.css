@@ -187,8 +187,18 @@ button.btn-close {
 
 
 @media screen and (max-width: 840px) {
+  body {
+    padding: 0 20px;
+  }
   .note-block {
     display: none;
+  }
+  .form-check-input {
+    margin-top: 3px;
+  }
+  button.btn-close {
+    position: static;
+    margin-top: 0;
   }
   .controls {
     position: static;
@@ -196,7 +206,7 @@ button.btn-close {
     margin: 30px 0;
   }
   p.number {
-    right: calc(100% + 5px);
+    right: calc(100% + 3px);
     top: -3px;
     font-size: 12px;
   }
