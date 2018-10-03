@@ -221,12 +221,26 @@ $(document).ready(function() {
 	  }
 
   	$(this).prop('disbaled', false);
-  })
+  });
 
+  let curSpeed = 1.0;
 
-  setTimeout(function() {
-    console.clear();
-  }, 500);
+  $('#btnIncrease').on('click', function(){
+    if (curSpeed >= 1.5) return;
+    curSpeed += 0.1;
+    $('#curSpeed').text(curSpeed.toFixed(1));
+    $.each($('audio'), function() {
+      this.playbackRate = curSpeed;
+    });
+  });
+  $('#btnDecrease').on('click', function(){
+    if (curSpeed <= 0.6) return;
+    curSpeed -= 0.1;
+    $('#curSpeed').text(curSpeed.toFixed(1));
+    $.each($('audio'), function() {
+      this.playbackRate = curSpeed;
+    });
+  });
 
 
 });

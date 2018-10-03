@@ -152,12 +152,34 @@ button.to-top {
     width: 100%;
   }
 
-  .audio-block span {
+
+
+  .audio-block p span {
     font-style: italic;
     display: block;
     margin: 15px 0 5px;
     padding: 5px 0;
     border-top: 1px dotted #eee;
+  }
+
+  .audio-controls {
+    margin-top: 15px;
+  }
+
+  .audio-controls .btn-group {
+    margin-top: -3px;
+  }
+
+  .audio-controls span {
+    padding-right: 5px;
+  }
+
+  #curSpeed {
+    padding: 5px 10px;
+    background: #eee;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-style: italic;
   }
 
   .audio-block p {
