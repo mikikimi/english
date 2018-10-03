@@ -185,11 +185,26 @@ button.btn-close {
   width: 100%;
 }
 
-.audio-block {
+.audio-block,
+.btn-media {
   display: none;
 }
 
 @media screen and (max-width: 840px) {
+  .btn-media {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+  }
+  .btn-media .fa-pause {
+    display: none;
+  }
+  .btn-media.playing .fa-pause {
+    display: inline-block;
+  }
+  .btn-media.playing .fa-play {
+    display: none;
+  }
   .audio-block {
     display: block;
     padding-bottom: 20px;

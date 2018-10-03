@@ -6,16 +6,16 @@ $(document).ready(function() {
     $('.audio-block').remove();
   }
 
-  $('#btnCloseControl').on('click', function(){
+  $('#btnCloseControl').on('click', function() {
     $('.control-inner').toggle();
     $('#toEleForm').toggle();
   });
 
-  $('#hideAllWords').on('change', function(){
+  $('#hideAllWords').on('change', function() {
     $('#showAll').click();
     if ($(this).is(':checked')) {
-      $('#hideWord').click();      
-      $('#hideOrder').click();      
+      $('#hideWord').click();
+      $('#hideOrder').click();
       $('#controlsForm :input, #dublicateForm :input').prop('disabled', true);
       $.each($('li'), function() {
         let wdText = $(this).find('[data-wd-val]').data('wd-val');
@@ -24,15 +24,15 @@ $(document).ready(function() {
         let rex = new RegExp(wdText, 'i');
 
         $(this).find('[data-sen-val]').html($(this).find('[data-sen-val]').html().replace(rex, '<strong class="wdText" style="color: transparent;">' + wdText + '</strong>'));
-        $(this).find('[data-sen-val]').on('mouseover', function(){
+        $(this).find('[data-sen-val]').on('mouseover', function() {
           $(this).find('.wdText').css('color', '');
         });
       });
-    } else {      
-      $('#controlsForm :input, #dublicateForm :input').prop('disabled', false);  
+    } else {
+      $('#controlsForm :input, #dublicateForm :input').prop('disabled', false);
       $('#hideOrder').click();
-      $('#hideSen').click();   
-      $('#showAll').click();   
+      $('#hideSen').click();
+      $('#showAll').click();
     }
   });
 
@@ -228,7 +228,7 @@ $(document).ready(function() {
 
   let curSpeed = 1.0;
 
-  $('#btnIncrease').on('click', function(){
+  $('#btnIncrease').on('click', function() {
     if (curSpeed >= 1.5) return;
     curSpeed += 0.1;
     $('#curSpeed').text(curSpeed.toFixed(1));
@@ -236,7 +236,7 @@ $(document).ready(function() {
       this.playbackRate = curSpeed;
     });
   });
-  $('#btnDecrease').on('click', function(){
+  $('#btnDecrease').on('click', function() {
     if (curSpeed <= 0.6) return;
     curSpeed -= 0.1;
     $('#curSpeed').text(curSpeed.toFixed(1));
@@ -244,4 +244,50 @@ $(document).ready(function() {
       this.playbackRate = curSpeed;
     });
   });
+
+  let curPlaying = -1;
+  let audioArr = $('audio');
+  $(audioArr[0]).on('play', function() {
+    $('#playPauseAudio').addClass('playing');
+  });
+  $(audioArr[1]).on('play', function() {
+    $('#playPauseAudio').addClass('playing');
+  });
+  $(audioArr[0]).on('pause', function() {
+    $('#playPauseAudio').removeClass('playing');
+  });
+  $(audioArr[1]).on('pause', function() {
+    $('#playPauseAudio').removeClass('playing');
+  });
+
+  $('#playPauseAudio').on('click', function() {
+
+    let state = audioArr[0].paused && audioArr[1].paused;
+
+    if (state) {
+      if (curPlaying != -1) {
+        audioArr[curPlaying].play();
+      } else {
+        audioArr[1].play();
+        curPlaying = 1;
+      }
+    } else {
+      if (!audioArr[0].paused && !audioArr[1].paused) {
+        audioArr[0].pause();
+        audioArr[1].pause();
+        curPlaying = 1;
+      } else if (!audioArr[0].paused) {
+        audioArr[0].pause();
+        curPlaying = 0;
+      } else {
+        audioArr[1].pause();
+        curPlaying = 1;
+      }
+    }
+
+    $.each($('audio'), function() {
+      this.playbackRate = curSpeed;
+    });
+  });
+  
 });
