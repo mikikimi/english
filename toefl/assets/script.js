@@ -24,8 +24,9 @@ $(document).ready(function() {
   $('#hideAllWords').on('change', function(){
     $('#showAll').click();
     if ($(this).is(':checked')) {
-      $('#hideWord').click();      
-      $('#hideOrder').click();      
+      $('#hideWord').click();
+      $('#hideOrder').click(); 
+      $('#hideDef').click();
       $('#controlsForm :input, #dublicateForm :input').prop('disabled', true);
       $.each($('li'), function() {
         let wdText = $(this).find('[data-wd-val]').data('wd-val');
