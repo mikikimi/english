@@ -3,7 +3,6 @@ body {
   padding: 0 40px;
   max-width: 820px;
   margin: 0 auto 50px;
-  font-family: Tahoma, sans-serif;
 }
 
 h1 {
@@ -159,7 +158,9 @@ button.btn-close {
 }
 
 .form-check-input {
-  margin-top: 6px;
+  margin-top: 5px;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 .audio-block,
@@ -192,6 +193,7 @@ button.btn-close {
 .btn-media.playing .fa-play {
   display: none;
 }
+
 p.title {
   cursor: pointer;
   text-transform: uppercase;
@@ -200,6 +202,7 @@ p.title {
   padding: 5px 20px;
   margin-top: 20px;
 }
+
 .setion-title {
   text-transform: uppercase;
   margin: 30px 0;
@@ -305,6 +308,9 @@ p.title {
 
   p.number {
     right: calc(100% + 3px);
+  }
+  .form-check-input {
+    margin-top: 3px;
   }
 }
 

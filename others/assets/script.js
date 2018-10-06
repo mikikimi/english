@@ -56,6 +56,10 @@ $(document).ready(function() {
   $('h6').on('click', function(e) {
     $(this).next().toggle();
   });
+  
+  $('p.title').on('click', function(e) {
+    $(this).next().toggle();
+  });
 
   $('#btnReset').on('click', function() {
     $('[data-dublicate]').remove();
