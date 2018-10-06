@@ -1,6 +1,6 @@
 body {
   width: 100%;
-  padding: 0 30px;
+  padding: 0 40px;
   max-width: 820px;
   margin: 0 auto 50px;
 }
@@ -273,10 +273,6 @@ button.btn-close {
     display: none;
   }
 
-  .form-check-input {
-    margin-top: 3px;
-  }
-
   button.btn-close {
     position: static;
     margin-top: 0;
@@ -288,19 +284,8 @@ button.btn-close {
     margin: 30px 0;
   }
 
-  p.number {
-    right: calc(100% + 3px);
-    top: -3px;
-    font-size: 12px;
-  }
-
   h1 {
     font-size: 30px;
-  }
-
-  ul {
-    font-size: 14px;
-    font-weight: 400;
   }
 
   .to-top-form {
@@ -309,5 +294,31 @@ button.btn-close {
 
   button.to-top {
     padding: 5px;
+  }
+
+  p.number {
+    right: calc(100% + 3px);
+  }
+}
+
+
+@media screen and (max-width: 560px) {
+  ul {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  p.number {
+    right: calc(100% + 3px);
+    top: -3px;
+    font-size: 12px;
+  }
+
+  .form-check-input {
+    margin-top: 3px;
+  }
+
+  body {
+    padding: 0 25px;
   }
 }
