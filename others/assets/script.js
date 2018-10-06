@@ -41,6 +41,18 @@ $(document).ready(function() {
     }
   });
 
+  $('#btnToggleCollinAllUnit').on('click', function(){
+    let val = $(this).data('val');
+
+    if (val == 'hide') {
+      $('.inner').show();
+      $(this).data('val', '');
+    } else {
+      $('.inner').hide();
+      $(this).data('val', 'hide');
+    }
+  });
+
   $('h6').on('click', function(e) {
     $(this).next().toggle();
   });
