@@ -57,6 +57,11 @@ p:last-child img {
   max-width: 100%;
 }
 
+.single-line p:last-child {
+  border: none;
+  margin: 12px 0;
+}
+
 .to-top-form {
   width: 100px;
   position: fixed;
@@ -212,6 +217,8 @@ button.btn-close {
 @media screen and (max-width: 1240px) {
   .btn-media {
     display: block;
+    width: 100%;
+    margin: 5px auto 0;
   }
 
   .audio-block {
