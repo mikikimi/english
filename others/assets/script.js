@@ -2,6 +2,10 @@ $(document).ready(function() {
 
   const orgList = $('li');
 
+  $.each($('audio'), function() {
+      this.playbackRate = 1.15;
+    });
+
   $('#btnCloseControl').on('click', function(){
     $('.control-inner').toggle();
     $('#toEleForm').toggle();

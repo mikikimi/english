@@ -23,9 +23,9 @@ $(document).ready(function() {
         wdText = wdText.slice(0, -2);
         let rex = new RegExp(wdText, 'i');
 
-        $(this).find('[data-sen-val]').html($(this).find('[data-sen-val]').html().replace(rex, '<strong class="wdText" style="color: transparent;">' + wdText + '</strong>'));
+        $(this).find('[data-sen-val]').html($(this).find('[data-sen-val]').html().replace(rex, '<strong class="wdText is-hidden" style="color: transparent;"><span>' + wdText + '</span></strong>'));
         $(this).find('[data-sen-val]').on('mouseover', function() {
-          $(this).find('.wdText').css('color', '');
+          $(this).find('.wdText').css('color', '').removeClass('is-hidden');
         });
       });
     } else {
