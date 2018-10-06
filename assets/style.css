@@ -192,7 +192,14 @@ button.btn-close {
 .btn-media.playing .fa-play {
   display: none;
 }
-
+p.title {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #eee;
+  padding: 5px 20px;
+  margin-top: 20px;
+}
 .setion-title {
   text-transform: uppercase;
   margin: 30px 0;
