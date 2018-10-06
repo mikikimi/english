@@ -299,6 +299,10 @@ button.btn-close {
   p.number {
     right: calc(100% + 3px);
   }
+
+  .form-check-input {
+    margin-top: 3px;
+  }
 }
 
 
@@ -312,10 +316,6 @@ button.btn-close {
     right: calc(100% + 3px);
     top: -3px;
     font-size: 12px;
-  }
-
-  .form-check-input {
-    margin-top: 3px;
   }
 
   body {
