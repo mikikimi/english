@@ -209,7 +209,7 @@ button.btn-close {
   font-weight: bold;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1240px) {
   .btn-media {
     display: block;
   }

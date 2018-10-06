@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   const orgList = $('li');
 
-  if ($(window).width() >= 840) {
+  if ($(window).width() >= 1240) {
     $('.audio-block').remove();
   }
 
