@@ -243,48 +243,39 @@ $(document).ready(function() {
   });
 
   let curPlaying = -1;
+  let audioState = 0;
   let audioArr = $('audio');
-  $(audioArr[0]).on('play', function() {
-    $('#playPauseAudio').addClass('playing');
-  });
-  $(audioArr[1]).on('play', function() {
-    $('#playPauseAudio').addClass('playing');
-  });
-  $(audioArr[0]).on('pause', function() {
-    $('#playPauseAudio').removeClass('playing');
-  });
-  $(audioArr[1]).on('pause', function() {
-    $('#playPauseAudio').removeClass('playing');
+
+  $.each(audioArr, function(index) {
+    $(this).on('play', function() {
+      if (curPlaying != -1 && curPlaying != index) {
+        audioArr[curPlaying].pause();
+      }
+      setTimeout(function() {
+        $('#playPauseAudio').addClass('playing');
+        curPlaying = index;
+        audioState = 1;
+      }, 10);
+    });
+    $(this).on('pause', function() {
+      $('#playPauseAudio').removeClass('playing');
+      audioState = 0;
+    });
   });
 
   $('#playPauseAudio').on('click', function() {
-
-    let state = audioArr[0].paused && audioArr[1].paused;
-
-    if (state) {
-      if (curPlaying != -1) {
-        audioArr[curPlaying].play();
-      } else {
-        audioArr[1].play();
-        curPlaying = 1;
-      }
-    } else {
-      if (!audioArr[0].paused && !audioArr[1].paused) {
-        audioArr[0].pause();
-        audioArr[1].pause();
-        curPlaying = 1;
-      } else if (!audioArr[0].paused) {
-        audioArr[0].pause();
+    if (audioState == 0) {
+      if (curPlaying == -1) {
         curPlaying = 0;
-      } else {
-        audioArr[1].pause();
-        curPlaying = 1;
       }
+      audioArr[curPlaying].play();
+    } else {
+      $.each(audioArr, function() {
+        if (!this.paused) {
+          this.pause();
+        }
+      });
     }
-
-    $.each($('audio'), function() {
-      this.playbackRate = curSpeed;
-    });
   });
 
 
