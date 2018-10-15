@@ -635,69 +635,76 @@
     </li>
   </ul>
   <div class="controls">
-    <form id="fadeForm">
-      <fieldset class="dublicate-control">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="shuffleItems">
-          <label class="form-check-label" for="shuffleItems">Shuffle List</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="fadeStuff">
-          <label class="form-check-label" for="fadeStuff">Fade Stuff</label>
-        </div>
-      </fieldset>
-    </form>
-    <hr>
-    <form id="controlsForm">
-      <fieldset class="toggle-control">
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="hideStuff" checked value="showAll" id="showAll">
-          <label class="form-check-label" for="showAll">Show all</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="hideStuff" value="hideSen" id="hideSen">
-          <label class="form-check-label" for="hideSen">Hide sentence</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="hideStuff" value="hideWord" id="hideWord">
-          <label class="form-check-label" for="hideWord">Hide word</label>
-        </div>
-        <div class="form-check full">
-          <input class="form-check-input" type="radio" name="hideStuff" value="hideAll" id="hideAll">
-          <label class="form-check-label" for="hideAll">Hide all but image</label>
-        </div>
-      </fieldset>
-      <fieldset class="dublicate-control">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="hideStuff" value="hideDef" id="hideDef">
-          <label class="form-check-label" for="hideDef">Hide definition</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="hideOrder" id="hideOrder">
-          <label class="form-check-label" for="hideOrder">Hide order</label>
-        </div>
-      </fieldset>
-    </form>
-    <form id="forTesting">
-      <fieldset class="dublicate-control">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="hideAllWords" id="hideAllWords">
-          <label class="form-check-label" for="hideAllWords">Hide word for test</label>
-        </div>
-      </fieldset>
-    </form>
-    <form id="dublicateForm">
-      <fieldset class="dublicate-control">
-        <div class="form-group">
-          <label for="dublicateSens">Dublicate Sentence</label>
-          <input class="form-control" type="number" value="2" id="dublicateSens" placeholder="How many times?">
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" id="btnDublicate" class="btn btn-primary">Dub</button>
-            <button type="button" id="btnReset" class="btn btn-secondary">Clear</button>
+    <div class="control-inner">
+      <form id="fadeForm">
+        <fieldset class="dublicate-control">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="shuffleItems">
+            <label class="form-check-label" for="shuffleItems">Shuffle List</label>
           </div>
-        </div>
-      </fieldset>
-    </form>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="fadeStuff">
+            <label class="form-check-label" for="fadeStuff">Fade Stuff</label>
+          </div>
+        </fieldset>
+      </form>
+      <hr>
+      <form id="controlsForm">
+        <fieldset class="toggle-control">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="hideStuff" checked value="showAll" id="showAll">
+            <label class="form-check-label" for="showAll">Show all</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="hideStuff" value="hideSen" id="hideSen">
+            <label class="form-check-label" for="hideSen">Hide sentence</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="hideStuff" value="hideWord" id="hideWord">
+            <label class="form-check-label" for="hideWord">Hide word</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="hideStuff" value="hideImg" id="hideImg">
+            <label class="form-check-label" for="hideImg">Hide image</label>
+          </div>
+          <div class="form-check full">
+            <input class="form-check-input" type="radio" name="hideStuff" value="hideAll" id="hideAll">
+            <label class="form-check-label" for="hideAll">Hide all but image</label>
+          </div>
+        </fieldset>
+        <fieldset class="dublicate-control">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="hideOrder" id="hideOrder">
+            <label class="form-check-label" for="hideOrder">Hide order</label>
+          </div>
+        </fieldset>
+      </form>
+      <form id="forTesting">
+        <fieldset class="dublicate-control">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="hideStuff" value="hideDef" id="hideDef">
+            <label class="form-check-label" for="hideDef">Hide definition</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="hideAllWords" id="hideAllWords">
+            <label class="form-check-label" for="hideAllWords">Hide word for test</label>
+          </div>
+        </fieldset>
+      </form>
+      <form id="dublicateForm">
+        <fieldset class="dublicate-control">
+          <div class="form-group">
+            <label for="dublicateSens">Dublicate Sentence</label>
+            <input class="form-control" type="number" value="2" id="dublicateSens" placeholder="How many times?">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" id="btnDublicate" class="btn btn-primary">Dub</button>
+              <button type="button" id="btnReset" class="btn btn-secondary">Clear</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <button type="button" id="btnCloseControl" class="btn-close">Toggle</button>
   </div>
   <form class="to-top-form" id="toEleForm">
     <input class="form-control" type="number" id="goToEl">
