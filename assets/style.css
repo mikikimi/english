@@ -83,6 +83,15 @@ p:last-child img {
   display: none;
 }
 
+.definition:before {
+  content: attr(data-def);
+  padding-right: 3px;
+}
+.definition sup:after {
+  font-style: italic;
+  content: attr(data-type);
+}
+
 button.to-top {
   -webkit-appearance: none;
   border: none;

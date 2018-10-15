@@ -154,6 +154,13 @@ $(document).ready(function() {
 
     $('input:radio[name=hideStuff]').prop('disabled', false);
   });
+  $('#hideDef').on("change", function() {
+    if ($(this).is(':checked')) {
+      $('[data-def]').addClass('d-none');
+    } else {
+      $('[data-def]').removeClass('d-none');
+    }
+  });
 
   $('#btnDublicate').on("click", function() {
     var num = $('#dublicateSens').val() | 0;
