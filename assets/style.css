@@ -1,6 +1,6 @@
 body {
   width: 100%;
-  padding: 0 40px;
+  padding: 0 40px 0 80px;
   max-width: 820px;
   margin: 0 auto 50px;
 }
@@ -238,7 +238,15 @@ p.title {
   font-weight: bold;
 }
 
+@media screen and (max-width: 1440px) {
+  body {
+    padding-left: 200px;
+  }
+}
 @media screen and (max-width: 1240px) {
+  body {
+    padding-left: 60px;
+  }
   .btn-media {
     display: block;
     width: 100%;
@@ -342,6 +350,6 @@ p.title {
   }
 
   body {
-    padding: 0 25px;
+    padding: 0 25px 0 35px;
   }
 }
