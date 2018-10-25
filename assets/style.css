@@ -83,6 +83,10 @@ p:last-child img {
   display: none;
 }
 
+.number:before {
+  content: attr(data-order);
+}
+
 .definition:before {
   content: attr(data-def);
   padding-right: 3px;

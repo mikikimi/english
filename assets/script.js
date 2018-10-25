@@ -15,7 +15,7 @@ $(document).ready(function() {
     $('#showAll').click();
     if ($(this).is(':checked')) {
       $('#hideWord').click();
-      $('#hideOrder').click();
+      $('#hideDef').click();
       $('#controlsForm :input, #dublicateForm :input').prop('disabled', true);
       $.each($('li'), function() {
         let wdText = $(this).find('[data-wd-val]').data('wd-val');
@@ -30,28 +30,9 @@ $(document).ready(function() {
       });
     } else {
       $('#controlsForm :input, #dublicateForm :input').prop('disabled', false);
-      $('#hideOrder').click();
       $('#hideSen').click();
+      $('#hideDef').click();
       $('#showAll').click();
-    }
-  });
-
-  $('#hideOrder').on("change", function() {
-    if ($(this).is(':checked')) {
-      $.each($('li'), function() {
-        let orderEl = $(this).find('.number');
-
-        orderEl.data('order', orderEl.text());
-        orderEl.text('');
-      });
-    } else {
-      $.each($('li'), function() {
-        let orderEl = $(this).find('.number');
-
-        if (orderEl.data('order')) {
-          orderEl.text(orderEl.data('order'));
-        }
-      });
     }
   });
 
@@ -126,7 +107,6 @@ $(document).ready(function() {
             wdEl.text('');
           }
         });
-        $('#hideOrder').prop('checked', true).trigger('change');
         break;
 
       case 'showAll':
@@ -145,7 +125,6 @@ $(document).ready(function() {
             imgEl.attr('src', imgEl.data('src'));
           }
         });
-        $('#hideOrder').prop('checked', false).trigger('change');;
         break;
 
       default:
