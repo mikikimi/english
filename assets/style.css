@@ -8,7 +8,7 @@ body {
 h1 {
   margin: 20px 0 50px;
   text-align: center;
-  font-size: 60px;
+  font-size: 54px;
   font-weight: bold;
   border-bottom: 1px solid #ccc;
   padding: 0 0 20px;
@@ -81,6 +81,10 @@ p:last-child img {
 
 .wdText.is-hidden span {
   display: none;
+}
+
+.hide-from-reading:before {
+  content: attr(data-value);
 }
 
 .number:before {
