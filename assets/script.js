@@ -213,7 +213,7 @@ $(document).ready(function() {
   $('#btnIncrease').on('click', function() {
     if (curSpeed >= 1.5) return;
     curSpeed += 0.1;
-    $('#curSpeed').text(curSpeed.toFixed(1));
+    $('#curSpeed').attr('data-value', curSpeed.toFixed(1));
     $.each($('audio'), function() {
       this.playbackRate = curSpeed;
     });
@@ -221,7 +221,7 @@ $(document).ready(function() {
   $('#btnDecrease').on('click', function() {
     if (curSpeed <= 0.6) return;
     curSpeed -= 0.1;
-    $('#curSpeed').text(curSpeed.toFixed(1));
+    $('#curSpeed').attr('data-value', curSpeed.toFixed(1));
     $.each($('audio'), function() {
       this.playbackRate = curSpeed;
     });
