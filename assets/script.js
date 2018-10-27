@@ -2,10 +2,6 @@ $(document).ready(function() {
 
   const orgList = $('li');
 
-  if ($(window).width() >= 1240) {
-    $('.audio-block').remove();
-  }
-
   $('#btnCloseControl').on('click', function() {
     $('.control-inner').toggle();
     $('#toEleForm').toggle();

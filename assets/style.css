@@ -95,6 +95,7 @@ p:last-child img {
   content: attr(data-def);
   padding-right: 3px;
 }
+
 .definition sup:after {
   font-style: italic;
   content: attr(data-type);
@@ -242,51 +243,61 @@ p.title {
   font-weight: bold;
 }
 
+.audio-block {
+  display: block;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px dotted #ccc;
+}
+
+.audio-block audio {
+  display: block;
+  width: 100%;
+}
+
+.audio-block p span {
+  font-style: italic;
+  display: block;
+  margin: 15px 0 5px;
+  padding: 5px 0;
+  border-top: 1px dotted #eee;
+}
+
+.audio-controls {
+  margin-top: 15px;
+}
+
+.audio-controls .btn-group {
+  margin-top: -3px;
+}
+
+.audio-controls span {
+  padding-right: 5px;
+}
+
+.audio-block p {
+  border: none;
+}
+
+.audio-block p:first-child span {
+  border-top: none;
+}
+
 @media screen and (max-width: 1440px) {
   body {
     padding-left: 200px;
   }
 }
+
 @media screen and (max-width: 1240px) {
   body {
     padding-left: 60px;
   }
+
   .btn-media {
     display: block;
     width: 100%;
     margin: 5px auto 0;
-  }
-
-  .audio-block {
-    display: block;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px dotted #ccc;
-  }
-
-  .audio-block audio {
-    display: block;
-    width: 100%;
-  }
-
-  .audio-block p span {
-    font-style: italic;
-    display: block;
-    margin: 15px 0 5px;
-    padding: 5px 0;
-    border-top: 1px dotted #eee;
-  }
-
-  .audio-controls {
-    margin-top: 15px;
-  }
-
-  .audio-controls .btn-group {
-    margin-top: -3px;
-  }
-
-  .audio-controls span {
-    padding-right: 5px;
   }
 
   #curSpeed {
@@ -295,14 +306,6 @@ p.title {
     border: 1px solid #ccc;
     text-align: center;
     font-style: italic;
-  }
-
-  .audio-block p {
-    border: none;
-  }
-
-  .audio-block p:first-child span {
-    border-top: none;
   }
 
   .note-block {
@@ -335,6 +338,7 @@ p.title {
   p.number {
     right: calc(100% + 3px);
   }
+
   .form-check-input {
     margin-top: 3px;
   }
