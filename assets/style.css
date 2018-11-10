@@ -69,6 +69,22 @@ p:last-child img {
   bottom: 20px;
 }
 
+.text-dark.hide-from-reading:before {
+  display: none;
+}
+
+.text-dark.hide-from-reading .fas {
+  color: #666;
+  font-size: 20px;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+.text-dark.hide-from-reading:after {
+  content: attr(data-value);
+  padding-left: 7px;
+}
+
 .wdText {
   border-bottom: 1px dotted #eee;
   display: inline-block;
@@ -109,6 +125,7 @@ button.to-top {
   cursor: pointer;
   box-shadow: none !important;
   outline: none !important;
+  background: #ccc;
 }
 
 button.btn-close {
@@ -182,11 +199,6 @@ button.btn-close {
   vertical-align: baseline;
 }
 
-.audio-block,
-.btn-media {
-  display: none;
-}
-
 .with-audio .btn-media {
   display: block;
   width: 100%;
@@ -199,6 +211,14 @@ button.btn-close {
   width: 100%;
   margin-top: 20px;
   margin: 20px auto;
+}
+
+
+.btn-media {
+  margin: 15px auto 0;
+  padding: 19px 20px;
+  border-radius: 50%;
+  display: block;
 }
 
 .btn-media .fa-pause {
@@ -292,12 +312,6 @@ p.title {
 @media screen and (max-width: 1240px) {
   body {
     padding-left: 60px;
-  }
-
-  .btn-media {
-    display: block;
-    width: 100%;
-    margin: 5px auto 0;
   }
 
   #curSpeed {

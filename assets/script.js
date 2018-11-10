@@ -1,11 +1,22 @@
 $(document).ready(function() {
 
   const orgList = $('li');
+  let curSpeed = 1.0;
+  let curPlaying = -1;
+  let audioArr = $('audio');
 
   $('#btnCloseControl').on('click', function() {
     $('.control-inner').toggle();
     $('#toEleForm').toggle();
   });
+
+  if ($('body').hasClass('ielts')) {
+    $.each($('[data-wd-val]'), function() {
+      let value = $(this).text();
+      let newVal = value + ' ' + value + ' ' + value;
+      $(this).text(newVal);
+    });
+  }
 
   $('#hideAllWords').on('change', function() {
     $('#showAll').click();
@@ -172,6 +183,7 @@ $(document).ready(function() {
     }
   });
 
+
   $('#fadeStuff').on('change', function() {
     if ($(this).is(':checked')) {
       // $('#btnReset').click();
@@ -208,8 +220,6 @@ $(document).ready(function() {
     $(this).prop('disbaled', false);
   });
 
-  let curSpeed = 1.0;
-
   $('#btnIncrease').on('click', function() {
     if (curSpeed >= 1.5) return;
     curSpeed += 0.1;
@@ -217,6 +227,9 @@ $(document).ready(function() {
     $.each($('audio'), function() {
       this.playbackRate = curSpeed;
     });
+    if (curPlaying) {
+      calcPlayTime(audioArr[curPlaying]);
+    }
   });
   $('#btnDecrease').on('click', function() {
     if (curSpeed <= 0.6) return;
@@ -225,21 +238,61 @@ $(document).ready(function() {
     $.each($('audio'), function() {
       this.playbackRate = curSpeed;
     });
+    if (curPlaying) {
+      calcPlayTime(audioArr[curPlaying]);
+    }
   });
 
-  let curPlaying = -1;
-  let audioArr = $('audio');
+  function sec2time(timeInSeconds) {
+    let sec_num = parseInt(timeInSeconds, 10); // don't forget the second param
+    let hours = Math.floor(sec_num / 3600);
+    let minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+    let seconds = sec_num - (hours * 3600) - (minutes * 60);
+
+    let hourSeparator = ':';
+    let minuteSeparator = ':';
+
+    if (hours == 0) {
+      hours = '';
+      hourSeparator = '';
+    }
+    if (minutes < 10 && hours != 0) {
+      minutes = "0" + minutes;
+    }
+    if (seconds < 10) {
+      seconds = "0" + seconds;
+    }
+    return hours + hourSeparator + minutes + minuteSeparator + seconds;
+  }
+
+  function calcPlayTime(ele) {
+    if (!ele.duration) return;
+    $('#playtime').attr('data-value', sec2time(ele.duration / curSpeed));
+  }
+
   $(audioArr[0]).on('play', function() {
     $('#playPauseAudio').addClass('playing');
+    calcPlayTime(audioArr[0]);
   });
   $(audioArr[1]).on('play', function() {
     $('#playPauseAudio').addClass('playing');
+    calcPlayTime(audioArr[1]);
+
   });
   $(audioArr[0]).on('pause', function() {
     $('#playPauseAudio').removeClass('playing');
   });
   $(audioArr[1]).on('pause', function() {
     $('#playPauseAudio').removeClass('playing');
+  });
+  $(audioArr[0]).on('pause', function() {
+    $('#playPauseAudio').removeClass('playing');
+  });
+  $(audioArr[0]).on('canplay', function() {
+    calcPlayTime(audioArr[0]);
+  });
+  $(audioArr[1]).on('canplay', function() {
+    calcPlayTime(audioArr[1]);
   });
 
   $('#playPauseAudio').on('click', function() {
@@ -271,5 +324,5 @@ $(document).ready(function() {
       this.playbackRate = curSpeed;
     });
   });
-  
+
 });
