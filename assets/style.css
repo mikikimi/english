@@ -199,12 +199,6 @@ button.btn-close {
   vertical-align: baseline;
 }
 
-.with-audio .btn-media {
-  display: block;
-  width: 100%;
-  margin: 5px auto 0;
-}
-
 .audio {
   display: block;
   max-width: 100%;

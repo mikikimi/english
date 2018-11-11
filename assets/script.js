@@ -266,15 +266,17 @@ $(document).ready(function() {
   }
 
   function calcPlayTime(ele) {
-    if (!ele.duration) return;
+    if (!ele || !ele.duration) return;
     $('#playtime').attr('data-value', sec2time(ele.duration / curSpeed));
   }
 
   $(audioArr[0]).on('play', function() {
     $('#playPauseAudio').addClass('playing');
+    curPlaying = 0;
     calcPlayTime(audioArr[0]);
   });
   $(audioArr[1]).on('play', function() {
+    curPlaying = 1;
     $('#playPauseAudio').addClass('playing');
     calcPlayTime(audioArr[1]);
 
