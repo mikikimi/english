@@ -277,6 +277,29 @@ p.title {
   border-top: 1px dotted #eee;
 }
 
+
+
+.audio-block p.loading + audio {
+  box-shadow: 0 0 5px green;
+  border-radius: 50px;
+}
+.audio-block p.loading span:after {
+  content: '(Loading...)';
+  padding-left: 5px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.audio-block p.error span:after {
+  content: '(Error!)';
+  padding-left: 5px;
+  font-style: italic;
+  color: red;
+}
+.audio-block p.error audio {
+  opacity: .5;
+}
+
 .audio-controls {
   margin-top: 15px;
 }
