@@ -300,16 +300,19 @@ $(document).ready(function() {
   $.each(audioArr, function(index) {
     let $this = $(this);
     $this.on('play', function() {
+      if (curPlaying != -1 && curPlaying != index) {
+        audioArr[curPlaying].pause();
+      }
       $this.parent().removeClass('loading error');
       $('#playPauseAudio').addClass('playing');
-      curPlaying = 0;
-      calcPlayTime(audioArr[0]);
+      curPlaying = index;
+      calcPlayTime($this[0]);
     });
     $this.on('pause', function() {
       $('#playPauseAudio').removeClass('playing');
     });
     $this.on('canplay', function() {
-      calcPlayTime(audioArr[0]);
+      calcPlayTime($this[0]);
       $this.parent().removeClass('loading error');
     });
 
