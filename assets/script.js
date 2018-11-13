@@ -300,6 +300,7 @@ $(document).ready(function() {
   $.each(audioArr, function(index) {
     let $this = $(this);
     $this.on('play', function() {
+      $this.parent().removeClass('loading error');
       $('#playPauseAudio').addClass('playing');
       curPlaying = 0;
       calcPlayTime(audioArr[0]);
@@ -309,13 +310,14 @@ $(document).ready(function() {
     });
     $this.on('canplay', function() {
       calcPlayTime(audioArr[0]);
+      $this.parent().removeClass('loading error');
     });
 
-    $this.on('loadedmetadata', function() {
+    $this.on('loadstart loadedmetadata', function() {
        $this.parent().addClass('loading');
     });
 
-    $this.on('stalled', function() {
+    $this.on('error', function() {
        $this.parent().addClass('error');
     });
 

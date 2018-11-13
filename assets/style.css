@@ -277,8 +277,6 @@ p.title {
   border-top: 1px dotted #eee;
 }
 
-
-
 .audio-block p.loading + audio {
   box-shadow: 0 0 5px green;
   border-radius: 50px;
@@ -296,6 +294,7 @@ p.title {
   font-style: italic;
   color: red;
 }
+
 .audio-block p.error audio {
   opacity: .5;
 }
