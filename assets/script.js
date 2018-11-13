@@ -270,31 +270,58 @@ $(document).ready(function() {
     $('#playtime').attr('data-value', sec2time(ele.duration / curSpeed));
   }
 
-  $(audioArr[0]).on('play', function() {
-    $('#playPauseAudio').addClass('playing');
-    curPlaying = 0;
-    calcPlayTime(audioArr[0]);
-  });
-  $(audioArr[1]).on('play', function() {
-    curPlaying = 1;
-    $('#playPauseAudio').addClass('playing');
-    calcPlayTime(audioArr[1]);
+  // $(audioArr[0]).on('play', function() {
+  //   $('#playPauseAudio').addClass('playing');
+  //   curPlaying = 0;
+  //   calcPlayTime(audioArr[0]);
+  // });
+  // $(audioArr[1]).on('play', function() {
+  //   curPlaying = 1;
+  //   $('#playPauseAudio').addClass('playing');
+  //   calcPlayTime(audioArr[1]);
 
-  });
-  $(audioArr[0]).on('pause', function() {
-    $('#playPauseAudio').removeClass('playing');
-  });
-  $(audioArr[1]).on('pause', function() {
-    $('#playPauseAudio').removeClass('playing');
-  });
-  $(audioArr[0]).on('pause', function() {
-    $('#playPauseAudio').removeClass('playing');
-  });
-  $(audioArr[0]).on('canplay', function() {
-    calcPlayTime(audioArr[0]);
-  });
-  $(audioArr[1]).on('canplay', function() {
-    calcPlayTime(audioArr[1]);
+  // });
+  // $(audioArr[0]).on('pause', function() {
+  //   $('#playPauseAudio').removeClass('playing');
+  // });
+  // $(audioArr[1]).on('pause', function() {
+  //   $('#playPauseAudio').removeClass('playing');
+  // });
+  // $(audioArr[0]).on('pause', function() {
+  //   $('#playPauseAudio').removeClass('playing');
+  // });
+  // $(audioArr[0]).on('canplay', function() {
+  //   calcPlayTime(audioArr[0]);
+  // });
+  // $(audioArr[1]).on('canplay', function() {
+  //   calcPlayTime(audioArr[1]);
+  // });
+
+  $.each(audioArr, function(index) {
+    let $this = $(this);
+    $this.on('play', function() {
+      $('#playPauseAudio').addClass('playing');
+      curPlaying = 0;
+      calcPlayTime(audioArr[0]);
+    });
+    $this.on('pause', function() {
+      $('#playPauseAudio').removeClass('playing');
+    });
+    $this.on('canplay', function() {
+      calcPlayTime(audioArr[0]);
+    });
+
+    $this.on('loadedmetadata', function() {
+       $this.parent().addClass('loading');
+    });
+
+    $this.on('stalled', function() {
+       $this.parent().addClass('error');
+    });
+
+    $this.on('loadeddata', function() {
+       $this.parent().removeClass('loading');
+    });
   });
 
   $('#playPauseAudio').on('click', function() {
