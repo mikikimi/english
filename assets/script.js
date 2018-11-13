@@ -307,25 +307,31 @@ $(document).ready(function() {
       $('#playPauseAudio').addClass('playing');
       curPlaying = index;
       calcPlayTime($this[0]);
+      if (!$this.parent().hasClass('loaded')) {
+       $this.parent().addClass('loading');
+      }
     });
     $this.on('pause', function() {
       $('#playPauseAudio').removeClass('playing');
     });
     $this.on('canplay', function() {
       calcPlayTime($this[0]);
+      $this.parent().addClass('loaded');
       $this.parent().removeClass('loading error');
     });
 
     $this.on('loadstart loadedmetadata', function() {
-       $this.parent().addClass('loading');
+      console.log('loadstart loadedmetadata');
+      $this.parent().addClass('loading');
     });
 
     $this.on('error', function() {
-       $this.parent().addClass('error');
+      $this.parent().addClass('error');
     });
 
     $this.on('loadeddata', function() {
-       $this.parent().removeClass('loading');
+      console.log('loadeddata');
+      $this.parent().removeClass('loading');
     });
   });
 
