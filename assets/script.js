@@ -10,13 +10,13 @@ $(document).ready(function() {
     $('#toEleForm').toggle();
   });
 
-  if ($('body').hasClass('ielts')) {
-    $.each($('[data-wd-val]'), function() {
-      let value = $(this).text();
-      let newVal = value + ' ' + value + ' ' + value;
-      $(this).text(newVal);
-    });
-  }
+  // if ($('body').hasClass('ielts')) {
+  //   $.each($('[data-wd-val]'), function() {
+  //     let value = $(this).text();
+  //     let newVal = value + ' ' + value + ' ' + value;
+  //     $(this).text(newVal);
+  //   });
+  // }
 
   $('#hideAllWords').on('change', function() {
     $('#showAll').click();
