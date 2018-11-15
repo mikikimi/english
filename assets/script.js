@@ -27,7 +27,7 @@ $(document).ready(function() {
       $.each($('li'), function() {
         let wdText = $(this).find('[data-wd-val]').data('wd-val');
 
-        wdText = wdText.slice(0, -2);
+        // wdText = wdText.slice(0, -2);
         let rex = new RegExp(wdText, 'i');
 
         $(this).find('[data-sen-val]').html($(this).find('[data-sen-val]').html().replace(rex, '<strong class="wdText is-hidden" style="color: transparent;"><span>' + wdText + '</span></strong>'));
@@ -321,7 +321,6 @@ $(document).ready(function() {
     });
 
     $this.on('loadstart loadedmetadata', function() {
-      console.log('loadstart loadedmetadata');
       $this.parent().addClass('loading');
     });
 
@@ -330,7 +329,6 @@ $(document).ready(function() {
     });
 
     $this.on('loadeddata', function() {
-      console.log('loadeddata');
       $this.parent().removeClass('loading');
     });
   });
