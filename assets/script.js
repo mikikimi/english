@@ -219,7 +219,9 @@ $(document).ready(function() {
     $(this).prop('disbaled', false);
   });
 
-  $('#btnIncrease').on('click', increaseSpeed());
+  $('#btnIncrease').on('click', function() {
+    increaseSpeed();
+  });
   $('#btnDecrease').on('click', function() {
     if (curSpeed <= 0.6) return;
     curSpeed -= 0.1;
