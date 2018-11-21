@@ -9,7 +9,6 @@ $(document).ready(function() {
     $('.control-inner').toggle();
     $('#toEleForm').toggle();
   });
-
   // if ($('body').hasClass('ielts')) {
   //   $.each($('[data-wd-val]'), function() {
   //     let value = $(this).text();
@@ -220,17 +219,7 @@ $(document).ready(function() {
     $(this).prop('disbaled', false);
   });
 
-  $('#btnIncrease').on('click', function() {
-    if (curSpeed >= 1.5) return;
-    curSpeed += 0.1;
-    $('#curSpeed').attr('data-value', curSpeed.toFixed(1));
-    $.each($('audio'), function() {
-      this.playbackRate = curSpeed;
-    });
-    if (curPlaying) {
-      calcPlayTime(audioArr[curPlaying]);
-    }
-  });
+  $('#btnIncrease').on('click', increaseSpeed());
   $('#btnDecrease').on('click', function() {
     if (curSpeed <= 0.6) return;
     curSpeed -= 0.1;
@@ -242,6 +231,22 @@ $(document).ready(function() {
       calcPlayTime(audioArr[curPlaying]);
     }
   });
+
+  function increaseSpeed(speed) {
+    if (curSpeed > 1.8) return;
+    if (speed) {
+      curSpeed = speed;
+    } else {
+      curSpeed += 0.1;
+    }
+    $('#curSpeed').attr('data-value', curSpeed.toFixed(1));
+    $.each($('audio'), function() {
+      this.playbackRate = curSpeed;
+    });
+    if (curPlaying) {
+      calcPlayTime(audioArr[curPlaying]);
+    }
+  }
 
   function sec2time(timeInSeconds) {
     let sec_num = parseInt(timeInSeconds, 10); // don't forget the second param
@@ -362,5 +367,10 @@ $(document).ready(function() {
       this.playbackRate = curSpeed;
     });
   });
+
+  if ($('body').hasClass('ielts')) {
+    curSpeed = 1.5;
+    increaseSpeed(curSpeed);
+  };
 
 });
