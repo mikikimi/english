@@ -5,17 +5,21 @@ $(document).ready(function() {
   let curPlaying = -1;
   let audioArr = $('audio');
 
+  const urlParams = new URLSearchParams(window.location.search);
+  const trippleWords = urlParams.get('trippleWords');
+
   $('#btnCloseControl').on('click', function() {
     $('.control-inner').toggle();
     $('#toEleForm').toggle();
   });
-  // if ($('body').hasClass('ielts')) {
-  //   $.each($('[data-wd-val]'), function() {
-  //     let value = $(this).text();
-  //     let newVal = value + ' ' + value + ' ' + value;
-  //     $(this).text(newVal);
-  //   });
-  // }
+
+  if (trippleWords) {
+    $.each($('[data-wd-val]'), function() {
+      let value = $(this).text();
+      let newVal = value + ', ' + value + ', ' + value;
+      $(this).text(newVal);
+    });
+  }
 
   $('#hideAllWords').on('change', function() {
     $('#showAll').click();
