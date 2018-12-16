@@ -5,6 +5,10 @@ $(document).ready(function() {
   let curPlaying = -1;
   let audioArr = $('audio');
 
+  if (location.hostname === "localhost") {
+    $('body').addClass('localhost');
+  }
+
   const urlParams = new URLSearchParams(window.location.search);
   const trippleWords = urlParams.get('trippleWords');
 
@@ -19,7 +23,7 @@ $(document).ready(function() {
       let newVal = value + ', ' + value + ', ' + value;
       $(this).text(newVal);
     });
-  }
+  };
 
   $('#hideAllWords').on('change', function() {
     $('#showAll').click();
@@ -379,4 +383,21 @@ $(document).ready(function() {
     increaseSpeed(curSpeed);
   };
 
+  const scrollGap = $(window).outerHeight() * 0.6;
+
+  $('.btn-prev').on('click', function() {
+    scrollTo();
+  });
+
+  $('.btn-next').on('click', function() {
+    scrollTo(true);
+  });
+
+
+  function scrollTo(next) {
+    const currentScroll = document.body.scrollTop;
+    $('html, body').animate({
+      scrollTop: next ? (currentScroll + scrollGap) : (currentScroll - scrollGap)
+    }, 0);
+  }
 });
