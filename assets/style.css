@@ -27,31 +27,29 @@ li {
   position: relative;
 }
 
-.nav {
-  position: fixed;
-  top: 0;
-  right: 130px;
-  bottom: 0;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 400px;
+.localhost .nav {
+  display: none;
 }
 
 .nav .btn {
+  position: fixed;
+  right: 130px;
+  z-index: 0;
+  width: 400px;
   opacity: 0;
   height: 45vh;
   width: 100%;
 }
 
-/*.nav .btn-prev {
+.nav .btn-prev {
   float: left;
+  top: 0;
 }
 
 .nav .btn-next {
   float: right;
-}*/
+  bottom: 0;
+}
 
 p.number {
   position: absolute;
@@ -290,6 +288,8 @@ p.title {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px dotted #ccc;
+  position: relative;
+  z-index: 11;
 }
 
 .audio-block audio {

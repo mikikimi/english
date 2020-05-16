@@ -1,64 +1,21 @@
-1. Burglars beware!
-go out
-When someone goes out, they leave their home and go somewhere else, usually for pleasure.
-•	Brian can't go out because he has to do his homework.
-break in
-When someone breaks in, they use force to enter a place, usually in order to steal something.
-•	Thieves broke in and stole Mrs Green's diamond necklace.
-set off
-When you set off an alarm, you make it start to work.
-•	Gillian burnt the toast and set off the smoke alarm.
-run away
-When you run away, you leave a place fast, usually because you are frightened.
-•	Brave people stand and fight when cowards run away.
+- var i = 4
+while i < 10
+  li
+    .text(data-file='Phrasal Verb in Action_Page_0' + i data-url='./draft/Phrasal Verb in Action_Page_0' + i + '.txt')
+      img(src='./draft/Phrasal Verb in Action_Page_0' + i + '.jpg')
+      .content(contenteditable="true")
+    .image(data-file='Phrasal Verb in Action_Page_0' + i + '_2' data-url='./draft/Phrasal Verb in Action_Page_0' + i + '_2.txt')
+      img(src='./draft/Phrasal Verb in Action_Page_0' + i + '_2.jpg')
+      .content(contenteditable="true")
+    - i++ 
 
-
-2 fire, fire!
-fool around
-When people fool around they behave in a silly and irresponsible way.
-•	Stop fooling around and do something useful!
-blaze up
-When something blazes up, it starts to burn strongly.
-•	We thought the fire was out but it suddenly blazed up again.
-call out
-When you call out the fire service, the doctor, the army, etc, you ask them to come and deal with a dangerous situation.
-•	The doctor doesn't like being called out in the middle of the night.
-put out
-When you put out a fire or a light, you make it stop burning.
-•	I used a fire extinguisher to put out the fire.
-
-3 No ticket,	no	ride
- 
-put out
-When you put out your hand or arm, you stretch it out.
-•	Josh put out his hand and grabbed the rail to stop himself from falling.
-get on
-When you get on a bus , train or plane, you go inside it.
-•	The bus was nearly empty when I
-got on.
-get out
-When  you  get  somethin..g   out,  you  take  it  from inside a container.
-•	We got our books out ready for the lesson.
-get off
-When you get off a bus, train or  plane,  you  leave it. (Note: You get off a bus, train, or plane, but you get out of a car.)
-•	Ring the bell to tell the driver you want to get off.
-
-
-4 feeling tired
-lie down
-When you lie down, you put your body flat on something.
-•	The animals lie down in the long grass so that nobody can see them.
-stretch out
-When you stretch out, you make your body straight and long.
-•	I can't stretch out in this bed. It's too short.
-drop off
- 
- 
-When you drop off,  or drop off to asleep.
- 
-rop off to sleep, you fall
- 
-•	Granddad dropped off while he was watching the television.
-wake up
-When something wakes you up, it makes you stop being asleep.
-•	Go and wake your brother up and tell him to get ready for school.
+- var j = 10
+while j < 70
+  li
+    .text(data-file='Phrasal Verb in Action_Page_' + j data-url='./draft/Phrasal Verb in Action_Page_' + j + '.txt')
+      img(src='./draft/Phrasal Verb in Action_Page_' + j + '.jpg')
+      .content(contenteditable="true")
+    .image(data-file='Phrasal Verb in Action_Page_' + j + '_2' data-url='./draft/Phrasal Verb in Action_Page_' + j + '_2.txt')
+      img(src='./draft/Phrasal Verb in Action_Page_' + j + '_2.jpg')
+      .content(contenteditable="true")
+    - j++ 
